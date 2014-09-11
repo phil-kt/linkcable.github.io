@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Comfortaa);
 h1, h2, h3, h4 {
-    font-family: 'Arimo', sans-serif;
-    font-weight: 500;
+    font-family: 'Comfortaa', cursive;
 }
 p {
     font-family: 'Arimo', sans-serif;
@@ -25,24 +25,24 @@ html {
     padding: 0;
 }
 .banner {
-    background-color: #02A153;
+    background-image: url("images/banner.jpg");
     padding: 50px 10px 10px 20px;
 }
 .banner .container {
     margin-top: 20px;
-    background-color: #FFFFFF;
     min-height: 200px;
 }
 .banner .container h1{
     text-align: center;
-    font-weight: bold;
-    font-size: 40px;
+    color: #FFFFFF;
+    font-size: 100px;
 }
 
 .banner .container p {
-    font-size: 22px;
-    padding-left: 5px;
+    color: #FFFFFF;
+    font-size: 30px;
     font-weight: 300;
+    text-align: center;
 }
 .middle {
     background-color: #CCC;
@@ -56,7 +56,6 @@ html {
     color: #CCC;
     font-family: 'Arimo', sans-serif;
     font-size: 20px;
-
 }
 .navbar-nav li a:hover {
     background-color: #373737;

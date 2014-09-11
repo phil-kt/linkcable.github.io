@@ -78,7 +78,8 @@ html {
     color: #A09F9F;
 }
 .bottom .container p {
-    color: #666;
+    font-size: 20px;
+    color: #A09F9F;
 }
 .navbar-toggle {
     color: #009b9b;
@@ -92,6 +93,7 @@ html {
 }
 .navbar-nav {
     margin: 0;
+    overflow: hidden;
 }
 
 .content p {

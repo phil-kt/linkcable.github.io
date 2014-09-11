@@ -9,21 +9,7 @@ p {
 html {
     background-color: #02A153;
 }
-.top {
-    background-color: #474747;
-}
-.top .navbar-brand {
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    padding: 0 10px;
-    background-color: #CCC;
-    color: #474747;
-    text-decoration: none;
-}
-.top .container {
-    padding: 0;
-}
+
 .banner {
     background-image: url("images/banner.jpg");
     padding: 50px 10px 10px 20px;
@@ -40,17 +26,27 @@ html {
 
 .banner .container p {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 300;
     text-align: center;
 }
 .middle {
-    background-color: #CCC;
+    background-color: #02A153;
 }
 .middle .container {
-    background-color: #FFF;
+    background-color: #FFFFFF;
     min-height: 300px;
+    padding-top: 20px;
     padding-bottom: 20px;
+}
+.middle .container p{
+    color: #000000;
+    font-size: 18px;
+    text-align: justify;
+}
+.middle .container img{
+    background-size: 100% auto;
+    width: 100%;
 }
 .navbar-nav li a {
     color: #CCC;
@@ -67,7 +63,7 @@ html {
     margin-top: -4px;
 }
 .bottom {
-    background-color: #474747;
+    background-color: #02A153
 }
 .bottom .container {
     background-color: #373737;

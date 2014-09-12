@@ -95,7 +95,9 @@ html {
     margin: 0;
     overflow: hidden;
 }
-
+.navbar-nav ul li{
+    display: inline;
+}
 .content p {
     line-height: 30px;
     font-size: 16px;

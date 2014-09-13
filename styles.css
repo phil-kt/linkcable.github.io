@@ -63,9 +63,6 @@ html {
     overflow: hidden;
     margin-top: -4px;
 }
-.navbar-nav li a img #email{
-    max-width:20px;
-}
 
 .bottom {
     background-color: #02A153;
@@ -105,3 +102,8 @@ html {
     padding-right: 15px;
     padding-left: 15px;
     }
+
+
+.container button{
+    height:100%;
+};

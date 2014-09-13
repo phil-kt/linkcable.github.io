@@ -103,7 +103,6 @@ html {
     padding-left: 15px;
     }
 
-
-.container button{
-    height:100%;
-};
+.grey{
+    color: #CCC;
+}

@@ -39,17 +39,24 @@ html {
     text-align: center;
 }
 .middle {
-    background-color: #02A153;
+    background-color: #FFFFFF;
 }
 .middle .container {
     background-color: #FFFFFF;
     padding-top: 20px;
+    border-left: 2px solid #373737;
+    border-right: 2px solid #373737;
 }
 
 .middle .container p{
     color: #000000;
     font-size: 18px;
     text-align: left;
+}
+
+.middle .container .work div h1{
+    float: right;
+    text-align: right;
 }
 
 .navbar-nav li a {
@@ -68,7 +75,7 @@ html {
 }
 
 .bottom {
-    background-color: #02A153;
+    background-color: #373737;
 }
 .bottom .container {
     background-color: #373737;
@@ -77,7 +84,8 @@ html {
 .bottom .container h1 {
     color: #A09F9F;
 }
-.bottom .container p {
+.bottom .container a {
+    text-decoration: none;
     font-size: 20px;
     color: #A09F9F;
 }

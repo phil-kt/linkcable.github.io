@@ -19,7 +19,6 @@ body {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  padding-top: 50px;
 }
 .container .announcement #giphy {
   width: 300px;
@@ -39,12 +38,20 @@ body {
   margin: 0;
 }
 .container .announcement .description div {
-  font-size: 15px;
+  font-size: 18px;
 }
-.container .announcement .description a {
+.container .announcement .description .social {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container .announcement .description .social a {
   text-decoration: none;
   color: #A9D3FF;
 }
-.container .announcement .description a:visited {
+.container .announcement .description .social a:visited {
   text-decoration: none;
+}
+.container .announcement .description .social i {
+  font-size: 25px;
+  width: 40px;
 }

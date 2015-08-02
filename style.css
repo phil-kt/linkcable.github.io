@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #89888E;
+}
+.container .announcement {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 50px;
+}
+.container .announcement #giphy {
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.container .announcement .description {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+.container .announcement .description h1 {
+  margin: 0;
+}
+.container .announcement .description div {
+  font-size: 15px;
+}
+.container .announcement .description a {
+  text-decoration: none;
+  color: #A9D3FF;
+}
+.container .announcement .description a:visited {
+  text-decoration: none;
+}

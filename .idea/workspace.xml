@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="622d6203-2c77-4d12-8dd6-b9d053c876a8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/giphy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PhilippeKimuraThollanderResume.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/GitHub-Mark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/banner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/cable.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/google.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/instagram.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/jso.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/picofme.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/recycle.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sbcs.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sbgd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sbu.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/stonybrook.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/summertech.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/unhackathon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/visit-westchester.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/wordpress.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jquery.lazyload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/send_form_email.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/style.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="linkcable.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66592425">
-              <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+            <state vertical-scroll-proportion="-8.708333">
+              <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -113,6 +96,7 @@
         <option value="$PROJECT_DIR$/giphy.js" />
         <option value="$PROJECT_DIR$/style.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -242,7 +226,7 @@
     <frame x="132" y="23" width="1290" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21591805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21591805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -360,8 +344,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66592425">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
+        <state vertical-scroll-proportion="-8.708333">
+          <caret line="25" column="73" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -48,6 +48,9 @@ body {
   text-decoration: none;
   color: #A9D3FF;
 }
+.container .announcement .description .social a:hover {
+  color: #E8E53C;
+}
 .container .announcement .description .social a:visited {
   text-decoration: none;
 }

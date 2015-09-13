@@ -1,35 +1,62 @@
 {
-  "name": "linkcable.github.io",
-  "version": "1.0.0",
-  "description": "Personal website",
-  "scripts": {
-    "test": "grunt"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LinkCable/linkcable.github.io.git"
-  },
-  "keywords": [
-    "personal",
-    "website",
-    "linkcable"
-  ],
-  "author": "Philippe Kimura-Thollander",
-  "bugs": {
-    "url": "https://github.com/LinkCable/linkcable.github.io/issues"
-  },
-  "homepage": "https://github.com/LinkCable/linkcable.github.io",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-browserify": "^3.8.0",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-less": "^1.0.1",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-watch": "^0.6.1",
-    "material-ui": "^0.10.1",
-    "react": "^0.13.3",
-    "react-essence": "0.0.21",
-    "react-tap-event-plugin": "^0.1.7",
-    "watchify": "^3.2.3"
-  }
+    "name": "philippe-kimura-thollander-personal-site",
+    "version": "0.0.1",
+    "dependencies": {},
+    "devDependencies": {
+        "del": "~0.1.3",
+        "gulp": "~3.8.8",
+        "gulp-autoprefixer": "~1.0.1",
+        "gulp-bower": "0.0.6",
+        "gulp-cache": "~0.2.4",
+        "gulp-imagemin": "latest",
+        "gulp-jshint": "~1.8.5",
+        "gulp-load-plugins": "~0.7.0",
+        "gulp-ruby-sass": "~1.0.5",
+        "browser-sync": "latest",
+        "gulp-size": "~1.1.0",
+        "gulp-useref": "~0.4.4",
+        "gulp-util": "~3.0.1",
+        "gulp-webserver": "latest",
+        "react": "latest",
+        "react-tools": "latest",
+        "reactify": "latest",
+        "watchify": "~2.1",
+        "browserify-shim": "^3.8.0",
+        "gulp-uglify": "^1.0.2",
+        "strip-debug": "^1.0.1",
+        "gulp-strip-debug": "^1.0.2",
+        "vinyl-source-stream": "^1.0.0",
+        "main-bower-files": "~2.6.2",
+        "babelify": "^6.1.3"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "jest": {
+        "scriptPreprocessor": "<rootDir>/preprocessor.js",
+        "unmockedModulePathPatterns": [
+            "<rootDir>/node_modules/react"
+        ]
+    },
+    "browserify": {
+        "transform": [
+            "browserify-shim",
+            [
+                "babelify", {
+                    "ignore": [
+                        "bower_components"
+                    ]
+                }
+            ]
+        ]
+    },
+    "browser": {
+        "jquery": "./app/bower_components/jquery/dist/jquery.js"
+    },
+    "browserify-shim": {
+        "jquery": "$"
+    }
 }

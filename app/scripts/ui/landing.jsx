@@ -1,4 +1,4 @@
-var React = require('react')
+var React = require('react');
 
 var Landing = React.createClass({
     render: function() {
@@ -19,6 +19,12 @@ var Landing = React.createClass({
                             <span>日本人</span>
                         </div>
                     </div>
+
+                    <div className="footer">
+                        scroll down for more <i className="fa fa-hand-o-down"></i> <br />
+                        (want the abridged version? <i className="fa fa-file-text-o"></i>)
+                    </div>
+
                 </div>
             </div>
         );

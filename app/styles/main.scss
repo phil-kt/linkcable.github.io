@@ -2,6 +2,30 @@ $icon-font-path: "../fonts/";
 
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
+@font-face {
+
+
+    font-family: 'Core Circus 3D Frame';
+    src: url('../fonts/core_circus_3d_frame.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/core_circus_3d_frame.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/core_circus_3d_frame.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Core Circus';
+    src: url('../fonts/core_circus.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/core_circus.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/core_circus.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@keyframes anim-words {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    10% { opacity: 0.3; width: 0px; }
+    20% { opacity: 1; width: 100%; }
+    27% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -23,12 +47,86 @@ body {
 .landing {
     height: 100vh;
     width: 100vw;
-    background: url(../images/me.jpg) no-repeat center center fixed;
+    background: url(../images/me_b&w.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    filter: gray; /* IE6-9 */
-    filter: grayscale(1); /* Firefox 35+ */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+
+    .intro {
+        float: right;
+        margin-top: 10vh;
+        margin-right: 10vw;
+
+        .header {
+            font-family: 'Core Circus 3D Frame';
+            font-size: 64px;
+            color: #7469D8;
+            text-align: right;
+        }
+
+        .details {
+            text-align: right;
+            font-family: 'Core Circus';
+            font-size: 64px;
+            color: #7469D8;
+            white-space: nowrap;
+
+        }
+
+
+        .anim-container {
+            font-family: 'Core Circus';
+            font-size: 64px;
+            color: #7469D8;
+            white-space: nowrap;
+
+
+            .rotating-words {
+                text-align: right;
+
+                span {
+                    position: absolute;
+                    right: 10vw;
+                    opacity: 0;
+                    overflow: hidden;
+                    color: #47D0BD;
+                    animation: anim-words 30s ease-in infinite 0s;
+                }
+
+                span:nth-child(1) {
+                    animation-delay: 0s;
+                    color: #47D0BD;
+                }
+
+                span:nth-child(2) {
+                    animation-delay: 5s;
+                    color: #203E5F;
+                }
+
+                span:nth-child(3) {
+                    animation-delay: 10s;
+                    color: #FCE850;
+                }
+
+                span:nth-child(4) {
+                    animation-delay: 15s;
+                    color: #ee1515;
+                }
+
+                span:nth-child(5) {
+                    animation-delay: 20s;
+                    color: #60A261;
+                }
+
+                span:nth-child(6) {
+                    animation-delay: 25s;
+                    color: #8BDEFF;
+                }
+            }
+        }
+
+
+    }
+
 }

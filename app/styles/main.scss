@@ -6,16 +6,23 @@ $fa-font-path: "/bower_components/font-awesome/fonts/";
 
 @font-face {
     font-family: 'Core Circus 3D Frame';
-    src: url('../fonts/core_circus_3d_frame.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/core_circus_3d_frame.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/core_circus_3d_frame.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url('../fonts/core_circus_3d/core_circus_3d_frame.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/core_circus_3d/core_circus_3d_frame.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/core_circus_3d/core_circus_3d_frame.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
     font-family: 'Core Circus';
-    src: url('../fonts/core_circus.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/core_circus.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/core_circus.ttf')  format('truetype'); /* Safari, Android, iOS */
+    src: url('../fonts/core_circus/core_circus.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/core_circus/core_circus.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/core_circus/core_circus.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Mikado Regular';
+    src: url('../fonts/mikado_regular/mikado_regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/mikado_regular/mikado_regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/mikado_regular/mikado_regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @keyframes anim-words {
@@ -24,6 +31,22 @@ $fa-font-path: "/bower_components/font-awesome/fonts/";
     20% { opacity: 1; width: 100%; }
     27% { opacity: 0; width: 100%; }
     100% { opacity: 0; }
+}
+
+.fa-rotate-45 {
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-rotate-225 {
+    -webkit-transform:rotate(225deg);
+    -moz-transform:rotate(225deg);
+    -o-transform:rotate(225deg);
+    transform:rotate(225deg);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .browsehappy {
@@ -133,9 +156,130 @@ body {
             position: absolute;
             bottom: 5vh;
             right: 10vw;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
 
 
 
+}
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/ny_blur.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .header {
+        color: #264AAD;
+        font-size: 64px;
+        text-align: center;
+        padding-top: 10vh;
+        font-family: 'Core Circus';
+
+    }
+
+    .copy {
+        margin-top: 5vh;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Mikado Regular';
+
+        .para {
+            font-size: 24px;
+            color: #fff;
+
+            ul li {
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+.education {
+    height: 100vh;
+    width: 100vw;
+    background: url(../images/sbu.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    .header {
+        color: #72B47A;
+        font-size: 64px;
+        text-align: center;
+        padding-top: 10vh;
+        font-family: 'Core Circus';
+
+    }
+
+    .schools {
+        width: 70vw;
+        height: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: center;
+        justify-content: center;
+
+        .school {
+            width: 20vh;
+            display: inline-block;
+            background: no-repeat center center;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .plane {
+            line-height: 30vh;
+            color: #fff;
+            display: inline-block;
+            font-size: 30px;
+        }
+        .sbu {
+            width: 30vh;
+            display: inline-block;
+            background-image: url(../images/schools/sbu.png);
+        }
+        .efrei {
+            height: 20vh;
+            background-image: url(../images/schools/efrei.png);
+        }
+        .uos {
+            height: 20vh;
+            background-image: url(../images/schools/uos.png);
+        }
+    }
+
+    .copy {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Mikado Regular';
+
+        .para {
+            font-size: 24px;
+            color: #fff;
+
+            ul li {
+                list-style-type: none;
+            }
+        }
+    }
 }

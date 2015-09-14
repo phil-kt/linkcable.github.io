@@ -3,6 +3,8 @@ var React = require('react'),
     mountNode = document.getElementById("app");
 
 import Landing from './ui/landing.jsx/';
+import About from './ui/about.jsx';
+import Education from './ui/education.jsx';
 
 var App = React.createClass({
 
@@ -10,6 +12,8 @@ var App = React.createClass({
     return (
       <div>
           <Landing />
+          <About />
+          <Education />
       </div>
     );
   }

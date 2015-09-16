@@ -2,7 +2,16 @@ var React = require('react');
 
 var Education = React.createClass({
 
+    getInitialState: function() {
+        return{school: "sbu"};
+    },
+
+    onSchoolClick: function() {
+
+    },
+
     render: function() {
+
         return (
             <div className="education">
                 <div className="header">
@@ -11,14 +20,18 @@ var Education = React.createClass({
                 <div className="schools">
                     <div className="school efrei">
                     </div>
-                    <i className="fa fa-plane plane fa-rotate-225"></i>
+                    <div className = "plane-container">
+                        <i className="fa fa-plane plane fa-rotate-225 left-plane" ref="leftPlane"></i>
+                    </div>
                     <div className="school sbu">
                     </div>
-                    <i className="fa fa-plane plane fa-rotate-45"></i>
+                    <div className = "plane-container">
+                        <i className="fa fa-plane plane fa-rotate-45 right-plane" ref="rightPlane"></i>
+                    </div>
                     <div className="school uos">
                     </div>
                 </div>
-                <div className="copy">
+                <div className="copy sbu">
                     <div className="para">
                         I'm currently attending Stony Brook University on Long Island, majoring in Computer
                         Science with minors in History (Asian concentration) and Digital Arts. I'm also a University
@@ -26,12 +39,21 @@ var Education = React.createClass({
                         3.5 GPA across all CS courses.
                     </div>
                     <br />
-
                     <div className="para">
-                        Other than studying in the States, I've also gone abroad to Paris and Korea to study at the
-                        Ecole d'ingénieur généraliste Informatique & technologies du numérique and the University of Seoul
-                        respectively. Whilst I was there I learned a lot about both French and Korean culture, picked up
-                        some of the language, and learned about the nightlife. ;)
+                        Classes I've taken during my time here include Analysis of Algorithms with Steven Skiena,
+                        Human-Computer Interaction, Operating Systems, Computer Architecture, Multimedia (Intro &
+                        Advanced). I'm currently taking Networks, Databases, and Software Engineering.
+                    </div>
+                </div>
+                <div className="copy uos hidden" ref = "uos">
+                    <div className="para">
+                        I studied at the University of Seoul of Korea in Fall of 2013, my sophomore year. I decided to
+                        study abroad in Korea because I has visited China and Japan prior, and thought it was time for
+                        me to visit the last "big" Asian nation. I was also obsessed with K-pop at the time.
+                    </div>
+                    <br />
+                    <div className="para">
+
                     </div>
                 </div>
             </div>

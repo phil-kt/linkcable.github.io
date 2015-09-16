@@ -12,8 +12,8 @@ var Landing = React.createClass({
                     <div className="anim-container">
                         <div className="rotating-words">
                             <span>designer</span>
-                            <span>coder</span>
-                            <span>gamer</span>
+                            <span>programmer</span>
+                            <span>collector</span>
                             <span>Pokemon Trainer</span>
                             <span>Anime addict</span>
                             <span>日本人</span>

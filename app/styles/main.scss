@@ -33,12 +33,28 @@ $fa-font-path: "/bower_components/font-awesome/fonts/";
     100% { opacity: 0; }
 }
 
+@keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes left-plane-move {
+    0%     { right: 0; }
+    100%   { transform: translate(-3vw,0) rotate(225deg);}
+}
+
+@keyframes right-plane-move {
+    0%     { left: 0; }
+    100%   { transform: translate(3vw,0) rotate(45deg);}
+}
+
+
+
 .fa-rotate-45 {
     -webkit-transform:rotate(45deg);
     -moz-transform:rotate(45deg);
     -o-transform:rotate(45deg);
     transform:rotate(45deg);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .fa-rotate-225 {
@@ -46,7 +62,6 @@ $fa-font-path: "/bower_components/font-awesome/fonts/";
     -moz-transform:rotate(225deg);
     -o-transform:rotate(225deg);
     transform:rotate(225deg);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .browsehappy {
@@ -207,7 +222,7 @@ body {
 .education {
     height: 100vh;
     width: 100vw;
-    background: url(../images/sbu.jpg) no-repeat center center fixed;
+    background: url(../images/sbu_contrast.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -223,7 +238,8 @@ body {
     }
 
     .schools {
-        width: 70vw;
+        margin-top: 3vh;
+        width: 80vw;
         height: 30vh;
         margin-left: auto;
         margin-right: auto;
@@ -233,27 +249,42 @@ body {
         justify-content: center;
 
         .school {
-            width: 20vh;
+            width: 20vw;
             display: inline-block;
             background: no-repeat center center;
             -webkit-background-size: contain;
             -moz-background-size: contain;
             -o-background-size: contain;
             background-size: contain;
-            margin: 0 auto;
             position: relative;
             top: 50%;
             transform: translateY(-50%);
         }
 
-        .plane {
-            line-height: 30vh;
-            color: #fff;
-            display: inline-block;
-            font-size: 30px;
+        .plane-container {
+
+            .plane {
+                width: 5vw;
+                line-height: 30vh;
+                color: #000;
+                display: inline-block;
+                font-size: 30px;
+                //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+
+            .left-plane {
+                animation: left-plane-move 3s infinite 0s;
+            }
+
+            .right-plane {
+                padding-top: 4vh;
+                animation: right-plane-move 3s infinite 0s;
+            }
         }
+
         .sbu {
-            width: 30vh;
+            margin: 0;
+            width: 30vw;
             display: inline-block;
             background-image: url(../images/schools/sbu.png);
         }
@@ -265,13 +296,18 @@ body {
             height: 20vh;
             background-image: url(../images/schools/uos.png);
         }
+        .hidden {
+            display: none;
+        }
     }
 
     .copy {
         width: 70vw;
+        margin-top: 3vh;
         margin-left: auto;
         margin-right: auto;
         font-family: 'Mikado Regular';
+        animation: anim-words 3s ease-in 1 0s;
 
         .para {
             font-size: 24px;

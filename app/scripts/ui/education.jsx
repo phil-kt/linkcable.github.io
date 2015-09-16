@@ -1,13 +1,42 @@
 var React = require('react');
+var sbu, efrei, uos;
 
 var Education = React.createClass({
 
-    getInitialState: function() {
-        return{school: "sbu"};
+    getInitialState: function () {
+        return {
+            school: "sbu"
+        };
     },
 
-    onSchoolClick: function() {
+    componentDidMount: function() {
+        sbu = React.findDOMNode(this.refs.sbu);
+        efrei = React.findDOMNode(this.refs.efrei);
+        uos = React.findDOMNode(this.refs.uos);
+    },
 
+    onSchoolClick: function(e) {
+        if (typeof this.props.onClick !== 'undefined') {
+            this.props.onClick(e);
+        }
+
+        if(e.target.className.includes("sbu") === true) {
+            sbu.className = "copy sbu";
+            efrei.className = "copy hidden";
+            uos.className = "copy hidden";
+        }
+
+        else if(e.target.className.includes("efrei") === true) {
+            sbu.className = "copy hidden";
+            efrei.className = "copy efrei";
+            uos.className = "copy hidden";
+        }
+
+        else if(e.target.className.includes("uos") === true) {
+            sbu.className = "copy hidden";
+            efrei.className = "copy hidden";
+            uos.className = "copy uos";
+        }
     },
 
     render: function() {
@@ -18,20 +47,35 @@ var Education = React.createClass({
                     Education
                 </div>
                 <div className="schools">
-                    <div className="school efrei">
+                    <div className="school efrei" onClick={this.onSchoolClick}>
                     </div>
                     <div className = "plane-container">
                         <i className="fa fa-plane plane fa-rotate-225 left-plane" ref="leftPlane"></i>
                     </div>
-                    <div className="school sbu">
+                    <div className="school sbu" onClick={this.onSchoolClick}>
                     </div>
                     <div className = "plane-container">
                         <i className="fa fa-plane plane fa-rotate-45 right-plane" ref="rightPlane"></i>
                     </div>
-                    <div className="school uos">
+                    <div className="school uos" onClick={this.onSchoolClick}>
                     </div>
                 </div>
-                <div className="copy sbu">
+                <div className="hidden" ref="efrei">
+                    <div className="para">
+                        EFREI was my first study abroad experience in Paris of Summer 2013. It only lasted a month,
+                        but while I was there I took classes on Business Management, Software Design, and basic French.
+                        (Je ne parle pas bien français)
+                    </div>
+                    <br />
+                    <div className="para">
+                        Of course, being in Paris I visited all the sights I could in the month I was there. The Eiffel
+                        Tower, L'Arc de Triomphe, the McDonald's with the white "M", I saw it all. My personal favorite site,
+                        however, was going up north to see the Grand Bé near Saint-Malo. The view of the changing tide
+                        is just breathtaking.
+                    </div>
+                </div>
+
+                <div className="copy sbu" ref="sbu">
                     <div className="para">
                         I'm currently attending Stony Brook University on Long Island, majoring in Computer
                         Science with minors in History (Asian concentration) and Digital Arts. I'm also a University
@@ -45,15 +89,18 @@ var Education = React.createClass({
                         Advanced). I'm currently taking Networks, Databases, and Software Engineering.
                     </div>
                 </div>
-                <div className="copy uos hidden" ref = "uos">
+                <div className="hidden" ref="uos">
                     <div className="para">
                         I studied at the University of Seoul of Korea in Fall of 2013, my sophomore year. I decided to
                         study abroad in Korea because I has visited China and Japan prior, and thought it was time for
-                        me to visit the last "big" Asian nation. I was also obsessed with K-pop at the time.
+                        me to visit the last "big" Asian nation. I was also pretty obsessed with K-pop at the time.
                     </div>
                     <br />
                     <div className="para">
-
+                        Whilst I was there I studied Korean language, culture, and nightlife. I visited several UNESCO
+                        sites, made friends with expats, travelled to Taipei and Tokyo, saw SNSD, T-Ara, and 9 Muses live,
+                        and made life-lasting friends
+                        across the globe.
                     </div>
                 </div>
             </div>

@@ -196,7 +196,7 @@ body {
         color: #264AAD;
         font-size: 64px;
         text-align: center;
-        padding-top: 10vh;
+        padding-top: 6vh;
         font-family: 'Core Circus';
 
     }
@@ -232,7 +232,7 @@ body {
         color: #72B47A;
         font-size: 64px;
         text-align: center;
-        padding-top: 10vh;
+        padding-top: 6vh;
         font-family: 'Core Circus';
 
     }
@@ -259,6 +259,10 @@ body {
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+        }
+
+        .school:hover {
+            cursor: pointer;
         }
 
         .plane-container {
@@ -296,9 +300,11 @@ body {
             height: 20vh;
             background-image: url(../images/schools/uos.png);
         }
-        .hidden {
-            display: none;
-        }
+
+    }
+
+    .hidden {
+        opacity: 0%;
     }
 
     .copy {
@@ -307,7 +313,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         font-family: 'Mikado Regular';
-        animation: anim-words 3s ease-in 1 0s;
+        animation: fade-in 2s ease-in 0s;
 
         .para {
             font-size: 24px;

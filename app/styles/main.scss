@@ -210,6 +210,82 @@ body {
         font-family: 'Core Circus';
     }
 
+    .logos {
+        margin-top: 3vh;
+        width: 80vw;
+        height: 30vh;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: center;
+        justify-content: center;
+
+        .logo {
+            width: 20vw;
+            display: inline-block;
+            background: no-repeat center center;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .logo:hover {
+            cursor: pointer;
+        }
+
+        .logo-passive:after {
+            content: "";
+            background: no-repeat center center;
+            background-size: contain;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            animation: hover-leave 1s ease-in;
+        }
+
+        .logo-passive:hover:after {
+            animation: hover-fill 1s ease-in;
+            opacity: 1.0;
+        }
+
+        .logo-active {
+            width: 20vw;
+            display: inline-block;
+            background: no-repeat center center;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .logo-active:after {
+            content: "";
+            background: no-repeat center center;
+            background-size: contain;
+            opacity: 1.0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+
+    }
+
     .copy {
         width: 70vw;
         margin-left: auto;
@@ -246,78 +322,18 @@ body {
         color: #72B47A;
     }
 
-    .schools {
+    .logos {
         margin-top: 3vh;
-        width: 80vw;
         height: 30vh;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: row;
-        flex-flow: center;
-        justify-content: center;
 
-        .school {
+        .logo {
             width: 20vw;
-            display: inline-block;
-            background: no-repeat center center;
-            -webkit-background-size: contain;
-            -moz-background-size: contain;
-            -o-background-size: contain;
-            background-size: contain;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
         }
 
-        .school:hover {
-            cursor: pointer;
-        }
-
-        .school-passive:after {
-            content: "";
-            background: no-repeat center center;
-            background-size: contain;
-            opacity: 0.5;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-            animation: hover-leave 1s ease-in;
-        }
-
-        .school-passive:hover:after {
-            animation: hover-fill 1s ease-in;
-            opacity: 1.0;
-        }
-
-        .school-active {
+        .logo-active {
             width: 20vw;
-            display: inline-block;
-            background: no-repeat center center;
-            -webkit-background-size: contain;
-            -moz-background-size: contain;
-            -o-background-size: contain;
-            background-size: contain;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
         }
 
-        .school-active:after {
-            content: "";
-            background: no-repeat center center;
-            background-size: contain;
-            opacity: 1.0;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-        }
 
         .plane-container {
 
@@ -369,11 +385,6 @@ body {
             background-image: url(../images/schools/uos.png);
         }
 
-    }
-
-    .hidden {
-        //animation: fade-out 1s;
-        opacity: 0%;
     }
 
     .copy {

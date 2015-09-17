@@ -29,27 +29,27 @@ var Education = React.createClass({
             sbu.className = "copy sbu";
             efrei.className = "copy hidden";
             uos.className = "copy hidden";
-            sbuLogo.className = "school school-active sbu";
-            uosLogo.className = "school school-passive uos";
-            efreiLogo.className = "school school-passive efrei";
+            sbuLogo.className = "logo logo-active sbu";
+            uosLogo.className = "logo logo-passive uos";
+            efreiLogo.className = "logo logo-passive efrei";
         }
 
         else if(e.target.className.includes("efrei") === true) {
             sbu.className = "copy hidden";
             efrei.className = "copy efrei";
             uos.className = "copy hidden";
-            efreiLogo.className = "school school-active efrei";
-            sbuLogo.className = "school school-passive sbu";
-            uosLogo.className = "school school-passive uos";
+            efreiLogo.className = "logo logo-active efrei";
+            sbuLogo.className = "logo logo-passive sbu";
+            uosLogo.className = "logo logo-passive uos";
         }
 
         else if(e.target.className.includes("uos") === true) {
             sbu.className = "copy hidden";
             efrei.className = "copy hidden";
             uos.className = "copy uos";
-            uosLogo.className = "school school-active uos";
-            efreiLogo.className = "school school-passive efrei";
-            sbuLogo.className = "school school-passive sbu";
+            uosLogo.className = "logo logo-active uos";
+            efreiLogo.className = "logo logo-passive efrei";
+            sbuLogo.className = "logo logo-passive sbu";
         }
     },
 
@@ -60,18 +60,18 @@ var Education = React.createClass({
                 <div className="header">
                     Education
                 </div>
-                <div className="schools">
-                    <div className="school school-passive efrei" onClick={this.onSchoolClick} ref="efreiLogo">
+                <div className="logos">
+                    <div className="logo logo-passive efrei" onClick={this.onSchoolClick} ref="efreiLogo">
                     </div>
                     <div className = "plane-container">
                         <i className="fa fa-plane plane fa-rotate-225 left-plane" ref="leftPlane"></i>
                     </div>
-                    <div className="school school-active sbu" onClick={this.onSchoolClick} ref="sbuLogo">
+                    <div className="logo logo-active sbu" onClick={this.onSchoolClick} ref="sbuLogo">
                     </div>
                     <div className = "plane-container">
                         <i className="fa fa-plane plane fa-rotate-45 right-plane" ref="rightPlane"></i>
                     </div>
-                    <div className="school school-passive uos" onClick={this.onSchoolClick} ref="uosLogo">
+                    <div className="logo logo-passive uos" onClick={this.onSchoolClick} ref="uosLogo">
                     </div>
                 </div>
                 <div className="hidden" ref="efrei">

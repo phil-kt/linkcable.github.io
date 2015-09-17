@@ -1,5 +1,5 @@
 var React = require('react');
-var sbu, efrei, uos;
+var sbu, sbuLogo, efrei, efreiLogo, uos, uosLogo;
 
 var Education = React.createClass({
 
@@ -11,8 +11,13 @@ var Education = React.createClass({
 
     componentDidMount: function() {
         sbu = React.findDOMNode(this.refs.sbu);
+        sbuLogo = React.findDOMNode(this.refs.sbuLogo);
+
         efrei = React.findDOMNode(this.refs.efrei);
+        efreiLogo = React.findDOMNode(this.refs.efreiLogo);
+
         uos = React.findDOMNode(this.refs.uos);
+        uosLogo = React.findDOMNode(this.refs.uosLogo);
     },
 
     onSchoolClick: function(e) {
@@ -24,18 +29,27 @@ var Education = React.createClass({
             sbu.className = "copy sbu";
             efrei.className = "copy hidden";
             uos.className = "copy hidden";
+            sbuLogo.className = "school school-active sbu";
+            uosLogo.className = "school school-passive uos";
+            efreiLogo.className = "school school-passive efrei";
         }
 
         else if(e.target.className.includes("efrei") === true) {
             sbu.className = "copy hidden";
             efrei.className = "copy efrei";
             uos.className = "copy hidden";
+            efreiLogo.className = "school school-active efrei";
+            sbuLogo.className = "school school-passive sbu";
+            uosLogo.className = "school school-passive uos";
         }
 
         else if(e.target.className.includes("uos") === true) {
             sbu.className = "copy hidden";
             efrei.className = "copy hidden";
             uos.className = "copy uos";
+            uosLogo.className = "school school-active uos";
+            efreiLogo.className = "school school-passive efrei";
+            sbuLogo.className = "school school-passive sbu";
         }
     },
 
@@ -47,17 +61,17 @@ var Education = React.createClass({
                     Education
                 </div>
                 <div className="schools">
-                    <div className="school efrei" onClick={this.onSchoolClick}>
+                    <div className="school school-passive efrei" onClick={this.onSchoolClick} ref="efreiLogo">
                     </div>
                     <div className = "plane-container">
                         <i className="fa fa-plane plane fa-rotate-225 left-plane" ref="leftPlane"></i>
                     </div>
-                    <div className="school sbu" onClick={this.onSchoolClick}>
+                    <div className="school school-active sbu" onClick={this.onSchoolClick} ref="sbuLogo">
                     </div>
                     <div className = "plane-container">
                         <i className="fa fa-plane plane fa-rotate-45 right-plane" ref="rightPlane"></i>
                     </div>
-                    <div className="school uos" onClick={this.onSchoolClick}>
+                    <div className="school school-passive uos" onClick={this.onSchoolClick} ref="uosLogo">
                     </div>
                 </div>
                 <div className="hidden" ref="efrei">

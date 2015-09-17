@@ -39,8 +39,13 @@ $fa-font-path: "/bower_components/font-awesome/fonts/";
 }
 
 @keyframes hover-fill {
-    0%   {opacity: 0.5; }
-    100% {opacity: 1;}
+    0%   { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes hover-leave {
+    0%   { opacity: 1; }
+    100% { opacity: 0.5; }
 }
 
 @keyframes left-plane-move {
@@ -281,6 +286,7 @@ body {
             right: 0;
             position: absolute;
             z-index: -1;
+            animation: hover-leave 1s ease-in;
         }
 
         .school-passive:hover:after {
@@ -314,8 +320,6 @@ body {
             z-index: -1;
         }
 
-
-
         .plane-container {
 
             .plane {
@@ -340,8 +344,12 @@ body {
             margin: 0;
             width: 30vw;
             display: inline-block;
+        }
+
+        .sbu:hover {
 
         }
+
         .sbu::after {
             background-image: url(../images/schools/sbu.png);
         }

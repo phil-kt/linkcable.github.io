@@ -8,7 +8,8 @@ var Experience = React.createClass({
                 <div className="header">
                     Experience
                 </div>
-                <div className="copy">
+
+                <div className="copy hbo">
                 </div>
             </div>
         );

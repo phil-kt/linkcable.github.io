@@ -193,26 +193,24 @@ body {
 
 }
 
-.about {
+
+.page {
     height: 100vh;
     width: 100vw;
-    background: url(../images/ny_blur.jpg) no-repeat center center fixed;
+    background:no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
     .header {
-        color: #264AAD;
         font-size: 64px;
         text-align: center;
         padding-top: 6vh;
         font-family: 'Core Circus';
-
     }
 
     .copy {
-        margin-top: 5vh;
         width: 70vw;
         margin-left: auto;
         margin-right: auto;
@@ -229,22 +227,23 @@ body {
     }
 }
 
+.about {
+    background-image: url(../images/ny_blur.jpg);
+
+    .header {
+        color: #264AAD;
+    }
+
+    .copy {
+        margin-top: 5vh;
+    }
+}
+
 .education {
-    height: 100vh;
-    width: 100vw;
-    background: url(../images/sbu_contrast.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url(../images/sbu_contrast.jpg);
 
     .header {
         color: #72B47A;
-        font-size: 64px;
-        text-align: center;
-        padding-top: 6vh;
-        font-family: 'Core Circus';
-
     }
 
     .schools {
@@ -378,20 +377,7 @@ body {
     }
 
     .copy {
-        width: 70vw;
         margin-top: 3vh;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: 'Mikado Regular';
         animation: fade-in 2s ease-in 0s;
-
-        .para {
-            font-size: 24px;
-            color: #fff;
-
-            ul li {
-                list-style-type: none;
-            }
-        }
     }
 }

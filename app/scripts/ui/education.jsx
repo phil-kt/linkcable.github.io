@@ -56,7 +56,7 @@ var Education = React.createClass({
     render: function() {
 
         return (
-            <div className="education">
+            <div className="page education">
                 <div className="header">
                     Education
                 </div>

@@ -4,7 +4,7 @@ var About = React.createClass({
 
     render: function() {
         return (
-          <div className="about">
+          <div className="page about">
               <div className="header">
                   About Me
               </div>

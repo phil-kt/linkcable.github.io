@@ -27,25 +27,25 @@ var Education = React.createClass({
 
         if(e.target.className.includes("sbu") === true) {
             sbu.className = "copy sbu";
-            efrei.className = "copy hidden";
-            uos.className = "copy hidden";
+            efrei.className = "hidden-fade";
+            uos.className = "hidden-fade";
             sbuLogo.className = "logo logo-active sbu";
             uosLogo.className = "logo logo-passive uos";
             efreiLogo.className = "logo logo-passive efrei";
         }
 
         else if(e.target.className.includes("efrei") === true) {
-            sbu.className = "copy hidden";
+            sbu.className = "hidden-fade";
             efrei.className = "copy efrei";
-            uos.className = "copy hidden";
+            uos.className = "hidden-fade";
             efreiLogo.className = "logo logo-active efrei";
             sbuLogo.className = "logo logo-passive sbu";
             uosLogo.className = "logo logo-passive uos";
         }
 
         else if(e.target.className.includes("uos") === true) {
-            sbu.className = "copy hidden";
-            efrei.className = "copy hidden";
+            sbu.className = "hidden-fade";
+            efrei.className = "hidden-fade";
             uos.className = "copy uos";
             uosLogo.className = "logo logo-active uos";
             efreiLogo.className = "logo logo-passive efrei";
@@ -74,7 +74,7 @@ var Education = React.createClass({
                     <div className="logo logo-passive uos" onClick={this.onSchoolClick} ref="uosLogo">
                     </div>
                 </div>
-                <div className="hidden" ref="efrei">
+                <div className="hidden-fade" ref="efrei">
                     <div className="para">
                         EFREI was my first study abroad experience in Paris of Summer 2013. It only lasted a month,
                         but while I was there I took classes on Business Management, Software Design, and basic French.
@@ -103,7 +103,7 @@ var Education = React.createClass({
                         Advanced). I'm currently taking Networks, Databases, and Software Engineering.
                     </div>
                 </div>
-                <div className="hidden" ref="uos">
+                <div className="hidden-fade" ref="uos">
                     <div className="para">
                         I studied at the University of Seoul of Korea in Fall of 2013, my sophomore year. I decided to
                         study abroad in Korea because I has visited China and Japan prior, and thought it was time for

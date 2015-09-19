@@ -38,6 +38,11 @@ $fa-font-path: "/bower_components/font-awesome/fonts/";
     100% { opacity: 1; }
 }
 
+@keyframes fade-out {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 @keyframes hover-fill {
     0%   { opacity: 0.5; }
     100% { opacity: 1; }
@@ -292,6 +297,7 @@ body {
         margin-right: auto;
         font-family: 'Mikado Regular';
 
+
         .para {
             font-size: 24px;
             color: #fff;
@@ -334,7 +340,6 @@ body {
             width: 20vw;
         }
 
-
         .plane-container {
 
             .plane {
@@ -361,10 +366,6 @@ body {
             display: inline-block;
         }
 
-        .sbu:hover {
-
-        }
-
         .sbu::after {
             background-image: url(../images/schools/sbu.png);
         }
@@ -387,8 +388,20 @@ body {
 
     }
 
+    .hidden-fade {
+        animation: fade-out 2s ease-out;
+        display: none;
+
+    }
     .copy {
         margin-top: 3vh;
+        animation: fade-in 2s ease-in 0s;
+    }
+}
+
+.experience {
+
+    .copy {
         animation: fade-in 2s ease-in 0s;
     }
 }

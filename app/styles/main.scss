@@ -63,8 +63,6 @@ $fa-font-path: "/bower_components/font-awesome/fonts/";
     100%   { transform: translate(3vw,0) rotate(45deg);}
 }
 
-
-
 .fa-rotate-45 {
     -webkit-transform:rotate(45deg);
     -moz-transform:rotate(45deg);
@@ -198,15 +196,14 @@ body {
 
 }
 
-
 .page {
     height: 100vh;
     width: 100vw;
-    background:no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    //background:no-repeat center center fixed;
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    //-o-background-size: cover;
+    //background-size: cover;
 
     .header {
         font-size: 64px;
@@ -218,7 +215,6 @@ body {
     .logos {
         margin-top: 3vh;
         width: 80vw;
-        height: 30vh;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -227,7 +223,6 @@ body {
         justify-content: center;
 
         .logo {
-            width: 20vw;
             display: inline-block;
             background: no-repeat center center;
             -webkit-background-size: contain;
@@ -288,6 +283,11 @@ body {
             z-index: -1;
         }
 
+    }
+
+    .hidden-fade {
+        animation: fade-out 2s ease-out;
+        display: none;
 
     }
 
@@ -296,7 +296,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         font-family: 'Mikado Regular';
-
 
         .para {
             font-size: 24px;
@@ -310,7 +309,9 @@ body {
 }
 
 .about {
-    background-image: url(../images/ny_blur.jpg);
+    background: url(../images/ny_blur.jpg) no-repeat center center fixed;
+    //background-image: url(../images/ny_blur.jpg);
+    background-size: cover;
 
     .header {
         color: #264AAD;
@@ -322,7 +323,8 @@ body {
 }
 
 .education {
-    background-image: url(../images/sbu_contrast.jpg);
+    //background-image: url(../images/sbu_contrast.jpg);
+    background-image: url(../images/bg/pumice.jpg);
 
     .header {
         color: #72B47A;
@@ -388,11 +390,6 @@ body {
 
     }
 
-    .hidden-fade {
-        animation: fade-out 2s ease-out;
-        display: none;
-
-    }
     .copy {
         margin-top: 3vh;
         animation: fade-in 2s ease-in 0s;
@@ -401,7 +398,38 @@ body {
 
 .experience {
 
+    background-image: url(../images/bg/ice_blue.jpg);
+
+    .logos {
+
+        margin-top: 3vh;
+        height: 15vh;
+
+        .logo {
+            width: 15vw;
+        }
+
+        .summertech::after {
+            background-image: url(../images/work/stech.png);
+        }
+
+        .hbo::after {
+            background-image: url(../images/work/hbo.png);
+        }
+
+        .hackerrank::after {
+            background-image: url(../images/work/hackerrank.png);
+        }
+
+        .sbugd::after {
+            background-image: url(../images/work/sbu_logo.png);
+        }
+    }
+
     .copy {
+        margin-top: 5vh;
         animation: fade-in 2s ease-in 0s;
     }
+
+
 }

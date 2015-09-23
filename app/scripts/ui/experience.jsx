@@ -2,11 +2,30 @@ var React = require('react');
 
 var Experience = React.createClass({
 
+
+    onWorkClick: function() {
+
+    },
+
+
     render: function() {
         return (
-            <div className="experience">
+            <div className="page experience">
                 <div className="header">
                     Experience
+                </div>
+
+                <div className="logos">
+
+                    <div className="logo logo-active hbo" onClick={this.onWorkClick} ref="hboLogo">
+                    </div>
+                    <div className="logo logo-passive summertech" onClick={this.onWorkClick} ref="summertechLogo">
+                    </div>
+                    <div className="logo logo-passive sbugd" onClick={this.onWorkClick} ref="sbugdLogo">
+                    </div>
+                    <div className="logo logo-passive hackerrank" onClick={this.onWorkClick} ref="hackerLogo">
+                    </div>
+
                 </div>
 
                 <div className="copy hbo">
@@ -17,6 +36,7 @@ var Experience = React.createClass({
                         develop the front-end website. I also designed the main search function of the site from
                         UX to UI to the actual implementation.
                     </div>
+                    <br />
                     <div className="para">
                         In addition to working on front end code, during my time at HBO I also led the design group of
                         Project HBO, an assignment given to the entire class of interns at the New York office. As the
@@ -33,6 +53,7 @@ var Experience = React.createClass({
                         I am responsible for designing posters, web banners, print handouts, and the occasional white
                         board graffiti.
                     </div>
+                    <br />
                     <div className="para">
                         You can see some of my designs down under my portfolio.
                     </div>
@@ -44,6 +65,7 @@ var Experience = React.createClass({
                         of college. SummerTech is a coding camp dedicated to teaching children ages 8 to 16 code, animation,
                         film, and 3D Modeling. I actually attended as a kid and then became a counselor.
                     </div>
+                    <br />
                     <div className="para">
                         When I worked at SummerTech, I first taught C++, then Java, then introduced Python into the coding
                         curriculum. After teaching code I moved on teaching 3D modeling. During my time there I taught
@@ -57,6 +79,7 @@ var Experience = React.createClass({
                         I am currently a campus ambassador for Hackerrank, a website which allows you to practice your coding
                         skill and also test your mettle in competitions against programmers all over the world.
                     </div>
+                    <br />
                     <div className="para">
                         As a campus ambassador, my duties involve advertising Hackerranks programming challenges to students
                         on campus, as well as organizing events for their competitions so that students can get together
@@ -64,12 +87,6 @@ var Experience = React.createClass({
                     </div>
                 </div>
 
-                <div className="hidden-fade">
-                    <div className="para">
-
-                    </div>
-                </div>
-                <div
             </div>
         );
     }

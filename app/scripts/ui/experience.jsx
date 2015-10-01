@@ -1,11 +1,73 @@
 var React = require('react');
 
+
+var hbo, hboLogo, stech, stechLogo, sbugd, sbugdLogo, hrank, hrankLogo, last, lastCopy;
+
 var Experience = React.createClass({
 
+    getInitialState: function() {
+        return {
+            school: "sbu"
+        };
+    },
 
-    onWorkClick: function() {
+    componentDidMount: function() {
+        hbo = React.findDOMNode(this.refs.hbo);
+        hboLogo = React.findDOMNode(this.refs.hboLogo);
+
+        stech = React.findDOMNode(this.refs.stech);
+        stechLogo = React.findDOMNode(this.refs.stechLogo);
+
+        sbugd = React.findDOMNode(this.refs.sbugd);
+        sbugdLogo = React.findDOMNode(this.refs.sbugdLogo);
+
+        hrank = React.findDOMNode(this.refs.hrank);
+        hrankLogo = React.findDOMNode(this.refs.hrankLogo);
+
+        last = React.findDOMNode(this.refs.hboLogo);
+        lastCopy = React.findDOMNode(this.refs.hbo);
 
     },
+
+    onWorkClick: function(e) {
+
+        if (typeof this.props.onClick !== 'undefined') {
+            this.props.onClick(e);
+        }
+
+        if(e.target.className.includes("hbo") === true){
+            this.hideEverything(last, lastCopy, hboLogo, hbo, "hbo");
+        }
+
+        if(e.target.className.includes("sbugd") === true){
+            this.hideEverything(last, lastCopy, sbugdLogo, sbugd, "sbugd");
+        }
+
+        if(e.target.className.includes("hrank") === true){
+            this.hideEverything(last, lastCopy, hrankLogo, hrank, "hrank");
+        }
+
+        if(e.target.className.includes("stech") === true){
+            this.hideEverything(last, lastCopy, stechLogo, stech, "stech");
+        }
+
+
+    },
+
+    hideEverything: function(previous, previousCopy, clicked, clickedCopy, clickedString) {
+
+        var previousString = previous.className.replace("copy ", "");
+        previous.className="logo logo-passive " + previousString;
+        previousCopy.className="hidden-fade";
+
+        clicked.className = "logo logo-active " + clickedString;
+        clickedCopy.className = "copy " + clickedString;
+
+
+        last = clicked;
+        lastCopy = clickedCopy;
+    },
+
 
 
     render: function() {
@@ -19,16 +81,16 @@ var Experience = React.createClass({
 
                     <div className="logo logo-active hbo" onClick={this.onWorkClick} ref="hboLogo">
                     </div>
-                    <div className="logo logo-passive summertech" onClick={this.onWorkClick} ref="summertechLogo">
+                    <div className="logo logo-passive stech" onClick={this.onWorkClick} ref="stechLogo">
                     </div>
                     <div className="logo logo-passive sbugd" onClick={this.onWorkClick} ref="sbugdLogo">
                     </div>
-                    <div className="logo logo-passive hackerrank" onClick={this.onWorkClick} ref="hackerLogo">
+                    <div className="logo logo-passive hrank" onClick={this.onWorkClick} ref="hrankLogo">
                     </div>
 
                 </div>
 
-                <div className="copy hbo">
+                <div className="copy hbo" ref="hbo">
                     <div className="para">
                         Over the past summer I had the opportunity to work in the Digital Products division of HBO.
                         During my time there I worked on an internal content management system which handled the banner
@@ -47,7 +109,7 @@ var Experience = React.createClass({
                     </div>
                 </div>
 
-                <div className="hidden-fade">
+                <div className="hidden-fade" ref="sbugd">
                     <div className="para">
                         Currently I serve as graphic designer for the Department of Computer Science at Stony Brook.
                         I am responsible for designing posters, web banners, print handouts, and the occasional white
@@ -59,7 +121,7 @@ var Experience = React.createClass({
                     </div>
                 </div>
 
-                <div className="hidden-fade">
+                <div className="hidden-fade" ref="stech">
                     <div className="para">
                         I worked at SummerTech Computer Camps for several years between high school and my early years
                         of college. SummerTech is a coding camp dedicated to teaching children ages 8 to 16 code, animation,
@@ -74,7 +136,7 @@ var Experience = React.createClass({
                     </div>
                 </div>
 
-                <div className="hidden-fade">
+                <div className="hidden-fade" ref="hrank">
                     <div className="para">
                         I am currently a campus ambassador for Hackerrank, a website which allows you to practice your coding
                         skill and also test your mettle in competitions against programmers all over the world.
@@ -82,8 +144,8 @@ var Experience = React.createClass({
                     <br />
                     <div className="para">
                         As a campus ambassador, my duties involve advertising Hackerranks programming challenges to students
-                        on campus, as well as organizing events for their competitions so that students can get together
-                        and hack and enjoy some Hackerrank swag.
+                        on campus, as well as organizing events for their competitions so that students can get together,
+                        hack and enjoy some Hackerrank swag.
                     </div>
                 </div>
 

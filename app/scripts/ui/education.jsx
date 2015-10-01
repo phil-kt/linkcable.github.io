@@ -1,5 +1,5 @@
 var React = require('react');
-var sbu, sbuLogo, efrei, efreiLogo, uos, uosLogo;
+var sbu, sbuLogo, efrei, efreiLogo, uos, uosLogo, last, lastCopy;;
 
 var Education = React.createClass({
 
@@ -18,6 +18,9 @@ var Education = React.createClass({
 
         uos = React.findDOMNode(this.refs.uos);
         uosLogo = React.findDOMNode(this.refs.uosLogo);
+
+        last = React.findDOMNode(this.refs.sbuLogo);
+        lastCopy = React.findDOMNode(this.refs.sbu);
     },
 
     onSchoolClick: function(e) {
@@ -25,32 +28,32 @@ var Education = React.createClass({
             this.props.onClick(e);
         }
 
-        if(e.target.className.includes("sbu") === true) {
-            sbu.className = "copy sbu";
-            efrei.className = "hidden-fade";
-            uos.className = "hidden-fade";
-            sbuLogo.className = "logo logo-active sbu";
-            uosLogo.className = "logo logo-passive uos";
-            efreiLogo.className = "logo logo-passive efrei";
+        if(e.target.className.includes("sbu") === true){
+            this.hideEverything(last, lastCopy, sbuLogo, sbu, "sbu");
         }
 
-        else if(e.target.className.includes("efrei") === true) {
-            sbu.className = "hidden-fade";
-            efrei.className = "copy efrei";
-            uos.className = "hidden-fade";
-            efreiLogo.className = "logo logo-active efrei";
-            sbuLogo.className = "logo logo-passive sbu";
-            uosLogo.className = "logo logo-passive uos";
+        if(e.target.className.includes("uos") === true){
+            this.hideEverything(last, lastCopy, uosLogo, uos, "uos");
         }
 
-        else if(e.target.className.includes("uos") === true) {
-            sbu.className = "hidden-fade";
-            efrei.className = "hidden-fade";
-            uos.className = "copy uos";
-            uosLogo.className = "logo logo-active uos";
-            efreiLogo.className = "logo logo-passive efrei";
-            sbuLogo.className = "logo logo-passive sbu";
+        if(e.target.className.includes("efrei") === true){
+            this.hideEverything(last, lastCopy, efreiLogo, efrei, "efrei");
         }
+
+    },
+
+    hideEverything: function(previous, previousCopy, clicked, clickedCopy, clickedString) {
+
+        var previousString = previous.className.replace("copy ", "");
+        previous.className="logo logo-passive " + previousString;
+        previousCopy.className="hidden-fade";
+
+        clicked.className = "logo logo-active " + clickedString;
+        clickedCopy.className = "copy " + clickedString;
+
+
+        last = clicked;
+        lastCopy = clickedCopy;
     },
 
     render: function() {

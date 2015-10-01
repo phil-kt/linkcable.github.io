@@ -197,13 +197,13 @@ body {
 }
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
-    //background:no-repeat center center fixed;
-    //-webkit-background-size: cover;
-    //-moz-background-size: cover;
-    //-o-background-size: cover;
-    //background-size: cover;
+    background:no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     .header {
         font-size: 64px;
@@ -292,10 +292,11 @@ body {
     }
 
     .copy {
-        width: 70vw;
+        max-width: 70vw;
         margin-left: auto;
         margin-right: auto;
         font-family: 'Mikado Regular';
+        padding-bottom: 5vh;
 
         .para {
             font-size: 24px;
@@ -309,9 +310,7 @@ body {
 }
 
 .about {
-    background: url(../images/ny_blur.jpg) no-repeat center center fixed;
-    //background-image: url(../images/ny_blur.jpg);
-    background-size: cover;
+    background-image: url(../images/ny_blur.jpg);
 
     .header {
         color: #264AAD;
@@ -323,15 +322,13 @@ body {
 }
 
 .education {
-    //background-image: url(../images/sbu_contrast.jpg);
-    background-image: url(../images/bg/pumice.jpg);
+    background-image: url(../images/sbu_contrast.png);
 
     .header {
         color: #72B47A;
     }
 
     .logos {
-        margin-top: 3vh;
         height: 30vh;
 
         .logo {
@@ -409,7 +406,7 @@ body {
             width: 15vw;
         }
 
-        .summertech::after {
+        .stech::after {
             background-image: url(../images/work/stech.png);
         }
 
@@ -417,7 +414,7 @@ body {
             background-image: url(../images/work/hbo.png);
         }
 
-        .hackerrank::after {
+        .hrank::after {
             background-image: url(../images/work/hackerrank.png);
         }
 

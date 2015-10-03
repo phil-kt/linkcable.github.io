@@ -56,8 +56,8 @@ var Experience = React.createClass({
 
     hideEverything: function(previous, previousCopy, clicked, clickedCopy, clickedString) {
 
-        var previousString = previous.className.replace("copy ", "");
-        previous.className="logo logo-passive " + previousString;
+        var previousString = previous.className.replace("logo logo-active", "");
+        previous.className="logo logo-passive" + previousString;
         previousCopy.className="hidden-fade";
 
         clicked.className = "logo logo-active " + clickedString;

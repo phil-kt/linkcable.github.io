@@ -10,8 +10,7 @@ var About = React.createClass({
               </div>
               <div className="copy">
                   <div className="para">
-                      Hey, as you might have already guessed, my name's Phil. Philippe Kimura-
-                      Thollander to be exact. I'm an aspiring designer/programmer/nerd currently
+                      Hey, as you might have already guessed, my name's Phil. Philippe Kimura-Thollander to be exact. I'm an aspiring designer/programmer/nerd currently
                       in his last year of study at Stony Brook University.
                   </div>
                   <br />
@@ -29,7 +28,7 @@ var About = React.createClass({
                       facts:
                       <ul>
                           <li><i className="fa fa-globe fa-fw"></i> I'm half-Swede, half-Japanese.</li>
-                          <li><i className="fa fa-code fa-fw"></i> I've never won a Hackathon. </li>
+                          <li><i className="fa fa-code fa-fw"></i> <s>I've never won a Hackathon.</s> <a href="http://devpost.com/software/roam-yno5mc">I won HackNY!</a> </li>
                           <li><i className="fa fa-yen fa-fw"></i> I'm a big fan of vaporwave. </li>
                       </ul>
                   </div>

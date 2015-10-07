@@ -6,6 +6,7 @@ import Landing from './ui/landing.jsx/';
 import About from './ui/about.jsx';
 import Education from './ui/education.jsx';
 import Experience from './ui/experience.jsx';
+import Portfolio from './ui/portfolio.jsx';
 
 var App = React.createClass({
 
@@ -16,6 +17,7 @@ var App = React.createClass({
           <About />
           <Education />
           <Experience />
+          <Portfolio />
       </div>
     );
   }

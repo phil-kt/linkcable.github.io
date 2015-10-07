@@ -289,8 +289,12 @@ body {
 
     .hidden-fade {
         animation: fade-out 2s ease-out;
-        display: none;
+        height: 0;
+        overflow: hidden;
+    }
 
+    .fade-in {
+        animation: fade-in 2s ease-in 0s;
     }
 
     .copy {
@@ -305,6 +309,10 @@ body {
             font-size: 24px;
             color: #fff;
 
+            a:hover{
+                text-decoration: none;
+            }
+
             ul li {
                 list-style-type: none;
             }
@@ -313,7 +321,7 @@ body {
 }
 
 .about {
-    background-image: url(../images/ny_blur.jpg);
+    background-image: url(../images/bg/birch.jpg);
 
     .header {
         color: #264AAD;
@@ -321,6 +329,11 @@ body {
 
     .copy {
         margin-top: 5vh;
+
+
+        a {
+            color: #ea3d32;
+        }
     }
 }
 
@@ -393,6 +406,7 @@ body {
     .copy {
         margin-top: 3vh;
         animation: fade-in 2s ease-in 0s;
+
     }
 }
 
@@ -428,8 +442,148 @@ body {
 
     .copy {
         margin-top: 5vh;
-        animation: fade-in 2s ease-in 0s;
+        animation: fade-in 1s ease-in 0s;
     }
 
+    .sbugd {
+        a {
+            color: #990000;
+        }
+    }
+
+    .stech {
+        a {
+            color: #fdb713;
+        }
+    }
+
+    .hrank {
+        a {
+            color: #27ad5b;
+        }
+
+    }
+
+
+}
+
+.portfolio {
+    background-image: url(../images/bg/sandstone.jpg);
+
+    .header {
+        color: #fff;
+    }
+
+    .logos {
+        height: 20vh;
+        margin-top: 5vh;
+
+        .logo {
+            width: 20vw;
+        }
+
+
+        .roam::after {
+            background-image: url(../images/portfolio/roam_logo.png);
+        }
+
+        .sbuport::after {
+            background-image: url(../images/portfolio/sbu.svg);
+        }
+
+        .stokr::after {
+            background-image: url(../images/portfolio/stokr_logo.svg);
+        }
+
+        .ren::after {
+            background-image: url(../images/portfolio/rendezvous.png);
+        }
+
+        .sim::after {
+            background-image: url(../images/portfolio/simpaired_logo.png);
+        }
+
+        .sbgd::after {
+            background-image: url(../images/portfolio/sbgd_logo.png);
+        }
+
+        .recycle::after {
+            background-image: url(../images/portfolio/recycle.png);
+        }
+
+        .cable::after{
+            background-image: url(../images/portfolio/logo.png);
+        }
+    }
+
+    .content {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+
+        .logos {
+            width: 7vw;
+            flex-direction: column;
+            border-right: solid white 3px;
+            display: inline-flex;
+            height: 70vh;
+            margin-top: 0;
+            vertical-align: top;
+            justify-content: space-between;
+
+            .logo {
+                width: 5vw;
+                height: 5vw;
+                transform: translateY(0%);
+                top: 0;
+            }
+
+            .roam::after {
+                background-image: url(../images/portfolio/roam_logo.png);
+            }
+
+            .sbuport::after{
+                background-image: url(../images/portfolio/sbu.svg);
+            }
+
+            .stokr::after{
+                background-image: url(../images/portfolio/stokr_logo.svg);
+            }
+
+            .ren::after {
+                background-image: url(../images/portfolio/rendezvous.png);
+            }
+
+            .sim::after {
+                background-image: url(../images/portfolio/simpaired_logo.png);
+            }
+
+            .sbgd::after {
+                background-image: url(../images/portfolio/sbgd_logo.png);
+            }
+
+            .recycle::after {
+                background-image: url(../images/portfolio/recycle.png);
+            }
+
+            .cable::after{
+                background-image: url(../images/portfolio/logo.png);
+            }
+        }
+
+        .about-project {
+            width: 60vw;
+            display: inline-block;
+            margin-left: 3vw;
+
+            .roam-profile {
+                .roam-wordmark {
+                    background-image: url(../images/portfolio/roam.png);
+                }
+            }
+
+        }
+    }
 
 }

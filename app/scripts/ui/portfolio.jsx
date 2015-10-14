@@ -2,6 +2,7 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Carousel = require('nuka-carousel');
 var Decorators = require('./decorators.jsx');
+var Roam = require('./roam-carousel.jsx');
 
 var grid, content;
 
@@ -28,14 +29,6 @@ var Portfolio = React.createClass({
     },
 
     render: function() {
-
-        var settings = {
-            dots: true,
-            infinite: false,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        };
 
         return (
           <div className="page portfolio">
@@ -92,22 +85,9 @@ var Portfolio = React.createClass({
                       </div>
                   </div>
                   <div className="about-project">
-                      <Carousel decorators={Decorators} framePadding="0px 40px" className="about-roam" ref="about-roam" >
-                          <div className="roam-profile copy ">
-                              <div className="roam-wordmark"></div>
-                              <p className="para">
-                              Roam was a project developed at HackNY with 3 other friends. We came in with the idea of making an app where you could get Google Maps directions without having mobile data. We've all encountered times when you have no data, or you run out of your monthly plan, but still need to know how to get somewhere. I myself ran into this situation when I was camping with friends over the summer.
-                              </p>
-                              <p className="para">
-                              I was responsible for the UI/UX/front-end aspect of the app. Now, being made in 24 hours and it being my first attempt at making an Android app as well as implementing my Material Design. I wasn't able to get material animations like I wanted, but thankfully the technical aspect of the app was impressive enough to impress the judges and net us first place.
-                              </p>
-                              <p className="para"> See it on Github <i className="fa fa-github-alt fa-fw"></i></p>
-                          </div>
-                          <div>
-                              <h1>hi</h1>
-                          </div>
-                          <div>
-                              <h2> hello </h2>
+                     <Roam ref="about-roam" />
+                      <Carousel decorators={Decorators} framePadding="0px 40px" className="about-stokr hidden" ref="about-stokr" >
+                          <div className="stokr-profile copy ">
                           </div>
                       </Carousel>
                   </div>

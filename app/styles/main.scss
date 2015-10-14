@@ -598,6 +598,17 @@ body {
             .slider-decorator-2{
                 bottom: unset !important;
             }
+
+            .devpost {
+                display: inline-block;
+                height: 24px;
+                width: 24px;
+                -webkit-mask: url(../images/portfolio/devpost-icon.svg) no-repeat;
+                mask: url(../images/portfolio/devpost-icon.svg) no-repeat;;
+                vertical-align: middle;
+                background-color: #406a35;
+            }
+
             .roam-profile {
                 .roam-wordmark {
                     height: 20vh;
@@ -605,6 +616,14 @@ body {
                     background-size: contain;
                     margin-bottom: 10px;
                 }
+
+                a {
+                    color: #406a35;
+                }
+            }
+
+            .stokr-profile {
+
             }
 
         }

@@ -205,6 +205,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     margin: 0;
+    padding-bottom: 5vh;
 
     .header {
         font-size: 64px;
@@ -302,7 +303,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         font-family: 'Mikado Regular';
-        padding-bottom: 5vh;
 
         .para {
             font-size: 24px;
@@ -524,10 +524,14 @@ body {
     }
 
     .content {
-        width: 70vw;
+        margin-top: 5vh;
+        width: 80vw;
         margin-left: auto;
         margin-right: auto;
         min-height: 70vh;
+        //display: flex;
+        //flex-direction: column;
+
 
         .logos {
             width: 7vw;
@@ -537,13 +541,16 @@ body {
             height: 100%;
             margin-top: 0;
             vertical-align: top;
-            justify-content: space-between;
 
             .logo {
-                width: 7vw;
-                height: 7vw;
+                width: 80px;
+                height: 80px;
                 transform: translateY(0%);
                 top: 0;
+            }
+
+            .logo-passive::after {
+                background-size: 65%;
             }
 
             .roam::after {
@@ -584,18 +591,13 @@ body {
         }
 
         .about-project {
-            width: 60vw;
+            width: 70vw;
             display: inline-block;
             margin-left: 3vw;
 
-            .slick-track {
-                width: 60vw !important;
-
-                .slick-slide {
-                    width: 60vw !important;
-                }
+            .slider-decorator-2{
+                bottom: unset !important;
             }
-
             .roam-profile {
                 .roam-wordmark {
                     height: 20vh;

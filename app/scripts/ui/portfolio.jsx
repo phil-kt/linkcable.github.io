@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Carousel = require('nuka-carousel');
+var Decorators = require('./decorators.jsx');
 
 var grid, content;
 
@@ -71,7 +72,7 @@ var Portfolio = React.createClass({
               </div>
 
 
-              <div className={this.state.portfolioVisible ? 'content' : 'content hidden'} ref="content">
+              <div className={this.state.portfolioVisible ? 'content fade-in' : 'content hidden'} ref="content">
                   <div className="logos">
                       <div className="logo logo-passive roam">
                       </div>
@@ -91,7 +92,7 @@ var Portfolio = React.createClass({
                       </div>
                   </div>
                   <div className="about-project">
-                      <Carousel className="about-roam" ref="about-roam" >
+                      <Carousel decorators={Decorators} framePadding="0px 40px" className="about-roam" ref="about-roam" >
                           <div className="roam-profile copy ">
                               <div className="roam-wordmark"></div>
                               <p className="para">

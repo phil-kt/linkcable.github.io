@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var sbu, sbuLogo, efrei, efreiLogo, uos, uosLogo, last, lastCopy;;
 
 var Education = React.createClass({
@@ -10,17 +11,17 @@ var Education = React.createClass({
     },
 
     componentDidMount: function() {
-        sbu = React.findDOMNode(this.refs.sbu);
-        sbuLogo = React.findDOMNode(this.refs.sbuLogo);
+        sbu = ReactDOM.findDOMNode(this.refs.sbu);
+        sbuLogo = ReactDOM.findDOMNode(this.refs.sbuLogo);
 
-        efrei = React.findDOMNode(this.refs.efrei);
-        efreiLogo = React.findDOMNode(this.refs.efreiLogo);
+        efrei = ReactDOM.findDOMNode(this.refs.efrei);
+        efreiLogo = ReactDOM.findDOMNode(this.refs.efreiLogo);
 
-        uos = React.findDOMNode(this.refs.uos);
-        uosLogo = React.findDOMNode(this.refs.uosLogo);
+        uos = ReactDOM.findDOMNode(this.refs.uos);
+        uosLogo = ReactDOM.findDOMNode(this.refs.uosLogo);
 
-        last = React.findDOMNode(this.refs.sbuLogo);
-        lastCopy = React.findDOMNode(this.refs.sbu);
+        last = ReactDOM.findDOMNode(this.refs.sbuLogo);
+        lastCopy = ReactDOM.findDOMNode(this.refs.sbu);
     },
 
     onSchoolClick: function(e) {

@@ -200,7 +200,6 @@ body {
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
-    background:no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -482,6 +481,10 @@ body {
             width: 20vw;
         }
 
+        .logo-passive::after {
+            background-size: 50%;
+        }
+
 
         .roam::after {
             background-image: url(../images/portfolio/roam_logo.png);
@@ -497,6 +500,10 @@ body {
 
         .ren::after {
             background-image: url(../images/portfolio/rendezvous.png);
+        }
+
+        .hunger::after{
+            background-image: url(../images/portfolio/hungerless.png);
         }
 
         .sim::after {
@@ -520,21 +527,21 @@ body {
         width: 70vw;
         margin-left: auto;
         margin-right: auto;
-        height: auto;
+        min-height: 70vh;
 
         .logos {
             width: 7vw;
             flex-direction: column;
             border-right: solid white 3px;
             display: inline-flex;
-            height: 70vh;
+            height: 100%;
             margin-top: 0;
             vertical-align: top;
             justify-content: space-between;
 
             .logo {
-                width: 5vw;
-                height: 5vw;
+                width: 7vw;
+                height: 7vw;
                 transform: translateY(0%);
                 top: 0;
             }
@@ -549,6 +556,10 @@ body {
 
             .stokr::after{
                 background-image: url(../images/portfolio/stokr_logo.svg);
+            }
+
+            .hunger::after{
+                background-image: url(../images/portfolio/hungerless.png);
             }
 
             .ren::after {
@@ -577,9 +588,20 @@ body {
             display: inline-block;
             margin-left: 3vw;
 
+            .slick-track {
+                width: 60vw !important;
+
+                .slick-slide {
+                    width: 60vw !important;
+                }
+            }
+
             .roam-profile {
                 .roam-wordmark {
-                    background-image: url(../images/portfolio/roam.png);
+                    height: 20vh;
+                    background: url(../images/portfolio/roam.png) no-repeat;
+                    background-size: contain;
+                    margin-bottom: 10px;
                 }
             }
 

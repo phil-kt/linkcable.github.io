@@ -1,29 +1,47 @@
 var React = require('react');
-var Carousel = require('react-slick');
+var ReactDOM = require('react-dom');
+var Carousel = require('nuka-carousel');
 
-
+var grid, content;
 
 var Portfolio = React.createClass({
 
+    getInitialState: function(){
+        return {portfolioVisible: false};
+    },
+
+    componentDidMount: function(){
+    },
 
     onLogoClick: function(e) {
 
-        var grid = React.findDOMNode(this.refs.grid);
-        grid.className="hidden-fade";
+        this.setState({portfolioVisible: true});
 
-        var content = React.findDOMNode(this.refs.content);
-        content.className="content fade-in";
+        //grid = React.findDOMNode(this.refs.grid);
+        //content = React.findDOMNode(this.refs.content);
+
+        //grid.className="hidden-fade";
+
+        //content.className="content fade-in";
 
     },
 
     render: function() {
+
+        var settings = {
+            dots: true,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        };
 
         return (
           <div className="page portfolio">
               <div className="header">
                 Portfolio
               </div>
-              <div className="grid" ref="grid">
+              <div className={this.state.portfolioVisible ? 'hidden' : 'grid'} ref="grid">
                   <div className="logos">
                       <div className="logo logo-passive roam" onClick={this.onLogoClick} ref="roamLogo">
                       </div>
@@ -36,7 +54,7 @@ var Portfolio = React.createClass({
 
                       <div className="logo logo-passive ren" onClick={this.onLogoClick} ref="renLogo">
                       </div>
-                      <div className="logo logo-passive">
+                      <div className="logo logo-passive hunger" onClick={this.onLogoClick} ref="renLogo">
                       </div>
                       <div className="logo logo-passive sim" onClick={this.onLogoClick} ref="simLogo">
                       </div>
@@ -53,7 +71,7 @@ var Portfolio = React.createClass({
               </div>
 
 
-              <div className="content hidden" ref="content">
+              <div className={this.state.portfolioVisible ? 'content' : 'content hidden'} ref="content">
                   <div className="logos">
                       <div className="logo logo-passive roam">
                       </div>
@@ -73,8 +91,8 @@ var Portfolio = React.createClass({
                       </div>
                   </div>
                   <div className="about-project">
-                      <div className="about-roam" ref="about-roam">
-                          <div className="roam-profile copy">
+                      <Carousel className="about-roam" ref="about-roam" >
+                          <div className="roam-profile copy ">
                               <div className="roam-wordmark"></div>
                               <p className="para">
                               Roam was a project developed at HackNY with 3 other friends. We came in with the idea of making an app where you could get Google Maps directions without having mobile data. We've all encountered times when you have no data, or you run out of your monthly plan, but still need to know how to get somewhere. I myself ran into this situation when I was camping with friends over the summer.
@@ -84,11 +102,13 @@ var Portfolio = React.createClass({
                               </p>
                               <p className="para"> See it on Github <i className="fa fa-github-alt fa-fw"></i></p>
                           </div>
-                          <div className="roam-screen-1">
+                          <div>
+                              <h1>hi</h1>
                           </div>
-                          <div className="roam-screen-2">
+                          <div>
+                              <h2> hello </h2>
                           </div>
-                      </div>
+                      </Carousel>
                   </div>
               </div>
           </div>

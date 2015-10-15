@@ -303,6 +303,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         font-family: 'Mikado Regular';
+        text-align: left;
 
         .para {
             font-size: 24px;
@@ -473,53 +474,55 @@ body {
         color: #fff;
     }
 
-    .logos {
-        height: 20vh;
-        margin-top: 5vh;
+    .grid {
+        min-height: 70vh;
+        .logos {
+            height: 20vh;
+            margin-top: 5vh;
 
-        .logo {
-            width: 20vw;
-        }
+            .logo {
+                width: 20vw;
+            }
 
-        .logo-passive::after {
-            background-size: 50%;
-        }
+            .logo-passive::after {
+            }
 
 
-        .roam::after {
-            background-image: url(../images/portfolio/roam_logo.png);
-        }
+            .roam::after {
+                background-image: url(../images/portfolio/roam_logo.png);
+            }
 
-        .sbuport::after {
-            background-image: url(../images/portfolio/sbu.svg);
-        }
+            .sbuport::after {
+                background-image: url(../images/portfolio/sbu.svg);
+            }
 
-        .stokr::after {
-            background-image: url(../images/portfolio/stokr_logo.svg);
-        }
+            .stokr::after {
+                background-image: url(../images/portfolio/stokr_logo.svg);
+            }
 
-        .ren::after {
-            background-image: url(../images/portfolio/rendezvous.png);
-        }
+            .rendezvous::after {
+                background-image: url(../images/portfolio/rendezvous.png);
+            }
 
-        .hunger::after{
-            background-image: url(../images/portfolio/hungerless.png);
-        }
+            .hunger::after{
+                background-image: url(../images/portfolio/hungerless.png);
+            }
 
-        .sim::after {
-            background-image: url(../images/portfolio/simpaired_logo.png);
-        }
+            .sim::after {
+                background-image: url(../images/portfolio/simpaired_logo.png);
+            }
 
-        .sbgd::after {
-            background-image: url(../images/portfolio/sbgd_logo.png);
-        }
+            .sbgd::after {
+                background-image: url(../images/portfolio/sbgd_logo.png);
+            }
 
-        .recycle::after {
-            background-image: url(../images/portfolio/recycle.png);
-        }
+            .recycle::after {
+                background-image: url(../images/portfolio/recycle.png);
+            }
 
-        .cable::after{
-            background-image: url(../images/portfolio/logo.png);
+            .cable::after{
+                background-image: url(../images/portfolio/logo.png);
+            }
         }
     }
 
@@ -529,28 +532,32 @@ body {
         margin-left: auto;
         margin-right: auto;
         min-height: 70vh;
-        //display: flex;
-        //flex-direction: column;
-
+        display: flex;
+        flex-direction: row;
 
         .logos {
             width: 7vw;
             flex-direction: column;
             border-right: solid white 3px;
-            display: inline-flex;
-            height: 100%;
+            display: flex;
+            height: initial;
             margin-top: 0;
             vertical-align: top;
+            justify-content: space-between;
 
             .logo {
-                width: 80px;
-                height: 80px;
+                width: 7vw;
+                height: 7vh;
                 transform: translateY(0%);
                 top: 0;
             }
 
             .logo-passive::after {
-                background-size: 65%;
+                background-size: contain;
+            }
+
+            .logo-active:after {
+                background-size: contain;
             }
 
             .roam::after {
@@ -569,7 +576,7 @@ body {
                 background-image: url(../images/portfolio/hungerless.png);
             }
 
-            .ren::after {
+            .rendezvous::after {
                 background-image: url(../images/portfolio/rendezvous.png);
             }
 
@@ -594,6 +601,7 @@ body {
             width: 70vw;
             display: inline-block;
             margin-left: 3vw;
+            display: flex;
 
             .slider-decorator-2{
                 bottom: unset !important;
@@ -606,24 +614,71 @@ body {
                 -webkit-mask: url(../images/portfolio/devpost-icon.svg) no-repeat;
                 mask: url(../images/portfolio/devpost-icon.svg) no-repeat;;
                 vertical-align: middle;
-                background-color: #406a35;
             }
 
-            .roam-profile {
+            .wordmark {
+                height: 20vh;
+                background: no-repeat;
+                background-size: contain;
+                margin-bottom: 10px;
+            }
+
+            .about-roam {
                 .roam-wordmark {
-                    height: 20vh;
-                    background: url(../images/portfolio/roam.png) no-repeat;
-                    background-size: contain;
-                    margin-bottom: 10px;
+                    background-image: url(../images/portfolio/roam.png);
                 }
 
                 a {
                     color: #406a35;
                 }
+
+                .devpost {
+                    background-color: #406a35;
+                }
             }
 
-            .stokr-profile {
+            .about-stokr {
+                .stokr-wordmark {
+                    background-image: url(../images/portfolio/stokr.png);
+                }
 
+                a {
+                    color: #7c7c7c;
+                }
+
+                .devpost {
+                    background-color: #7c7c7c;
+                }
+            }
+
+            .about-rendezvous {
+                .slider-list {
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+
+                    .slider-slide {
+                        display: flex !important;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .rendezvous-wordmark {
+                    background-image: url(../images/portfolio/rendezvous/rendezvous_wordmark.png);
+                }
+
+                a {
+                    color: #72bae2;
+                }
+
+                .devpost {
+                    background-color: #dceef8;
+                }
+
+                .rendezvous-1 {
+                    margin: auto;
+                    max-height: 70vh;
+                }
             }
 
         }

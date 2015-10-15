@@ -8,9 +8,9 @@ var Roam = React.createClass({
     render: function() {
 
         return (
-            <Carousel decorators={Decorators} framePadding="0px 40px" className="about-roam">
+            <Carousel decorators={Decorators} framePadding="0px 40px" className="about-roam hidden">
                 <div className="roam-profile copy ">
-                    <div className="roam-wordmark"></div>
+                    <div className="roam-wordmark wordmark"></div>
                     <p className="para">
                         Roam is a project developed at HackNY with 3 other friends. We came in with the idea of making
                         an app where you could get Google Maps directions without having mobile data. We've all

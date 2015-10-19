@@ -10,7 +10,7 @@ var Contact = React.createClass({
                 </div>
                 <div className="copy">
                     <p className="para">
-                       Wow, you read all the way down to here! (Or just clicked the nav button, I don't judge.) Well if you read through some of my site or looked through my portfolio and liked what you saw feel free to get in touch with me through any of the following:
+                       Wow, you read all the way down to here! (Or just clicked the nav button, I don't judge.) Well if you read through some of my site or looked through my portfolio and liked what you saw, feel free to get in touch with me through any of the following:
                     </p>
                     <p className="para links">
                         <a href="mailto:philippekimurathollander@gmail.com"><i className="fa fa-envelope fa-fw"></i></a>

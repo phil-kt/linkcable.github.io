@@ -109,7 +109,7 @@ gulp.task('fonts', function() {
 // Clean
 gulp.task('clean', function(cb) {
     $.cache.clearAll();
-    cb(del.sync(['dist/styles', 'dist/scripts', 'dist/images']));
+    cb(del.sync(['dist/styles', 'dist/scripts', 'dist/images', 'dist/files']));
 });
 
 // Bundle
@@ -161,6 +161,12 @@ gulp.task('extras', function() {
         .pipe($.size());
 });
 
+gulp.task('files', function() {
+    return gulp.src(['app/files/*'])
+        .pipe(gulp.dest('dist/files/'))
+        .pipe($.size());
+});
+
 // Watch
 gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
 
@@ -182,14 +188,14 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
 
     gulp.watch(['app/styles/**/*.scss', 'app/styles/**/*.css'], ['styles', 'scripts', reload]);
 
-    
+
 
     // Watch image files
     gulp.watch('app/images/**/*', reload);
 });
 
 // Build
-gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras'], function() {
+gulp.task('build', ['html', 'buildBundle', 'images', 'fonts', 'extras', 'files'], function() {
     gulp.src('dist/scripts/app.js')
         .pipe($.uglify())
         .pipe($.stripDebug())

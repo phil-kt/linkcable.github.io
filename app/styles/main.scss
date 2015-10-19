@@ -609,6 +609,7 @@ body {
             margin-left: auto;
             margin-right: auto;
             display: flex;
+            overflow: hidden;
 
             .slider-list {
                 display: flex !important;
@@ -890,10 +891,17 @@ body {
         .links {
 
             text-align: center;
+            margin-top: 20px;
 
             a {
+                margin-left: 10px;
+                margin-right: 10px;
                 color: #fff;
                 font-size: 24pt;
+            }
+
+            a:hover {
+                color: #000;
             }
         }
 

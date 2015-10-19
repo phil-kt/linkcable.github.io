@@ -8,6 +8,7 @@ import Education from './ui/education.jsx';
 import Experience from './ui/experience.jsx';
 import Portfolio from './ui/portfolio.jsx';
 import Extracurriculars from './ui/extracurriculars.jsx';
+import Contact from './ui/contact.jsx';
 
 var App = React.createClass({
 
@@ -20,6 +21,7 @@ var App = React.createClass({
           <Experience />
           <Portfolio />
           <Extracurriculars />
+          <Contact />
       </div>
     );
   }

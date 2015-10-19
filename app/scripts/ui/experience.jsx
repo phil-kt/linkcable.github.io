@@ -1,7 +1,7 @@
 var React = require('react');
 
 
-var hbo, hboLogo, stech, stechLogo, sbugd, sbugdLogo, hrank, hrankLogo, last, lastCopy;
+var hbo, hboLogo, stech, stechLogo, sbugd, sbugdLogo, hrank, hrankLogo, last, lastCopy, copy;
 
 var Experience = React.createClass({
 
@@ -27,9 +27,13 @@ var Experience = React.createClass({
         last = React.findDOMNode(this.refs.hboLogo);
         lastCopy = React.findDOMNode(this.refs.hbo);
 
+        copy = $('.experience');
+
     },
 
     onWorkClick: function(e) {
+
+        var oldHeight = copy.height();
 
         if (typeof this.props.onClick !== 'undefined') {
             this.props.onClick(e);
@@ -51,6 +55,11 @@ var Experience = React.createClass({
             this.hideEverything(last, lastCopy, stechLogo, stech, "stech");
         }
 
+        var newHeight = copy.height();
+        copy.height(oldHeight);
+        copy.animate({height: newHeight}, 'fast', function() {
+            copy.height('auto');
+        });
 
     },
 

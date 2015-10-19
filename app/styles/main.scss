@@ -208,7 +208,7 @@ body {
     padding-bottom: 5vh;
 
     .header {
-        font-size: 64px;
+        font-size: 56px;
         text-align: center;
         padding-top: 6vh;
         font-family: 'Core Circus';
@@ -312,16 +312,17 @@ body {
             a:hover{
                 text-decoration: none;
             }
+        }
 
-            ul li {
-                list-style-type: none;
-            }
+        ul li {
+            font-size: 24px;
+            color: #fff;
+            list-style-type: none;
         }
     }
 }
 
 .about {
-    //background-image: url(../images/bg/birch.jpg);
     background-color: #7793e1;
 
     .header {
@@ -331,7 +332,7 @@ body {
     .copy {
         margin-top: 5vh;
 
-        para {
+        .para {
             color: #e3e9f9;
         }
 
@@ -342,7 +343,6 @@ body {
 }
 
 .education {
-    //background-image: url(../images/bg/sbu_contrast.png);
     background-color: #9ac9a0;
 
     .header {
@@ -449,7 +449,6 @@ body {
     .copy {
         margin-top: 5vh;
         animation: fade-in 1s ease-in 0s;
-        min-height: 60vh;
     }
 
     .sbugd {
@@ -483,7 +482,6 @@ body {
     }
 
     .grid {
-        min-height: 70vh;
         .logos {
             height: 20vh;
             margin-top: 5vh;
@@ -539,7 +537,6 @@ body {
         width: 80vw;
         margin-left: auto;
         margin-right: auto;
-        min-height: 70vh;
         display: flex;
         flex-direction: column;
 
@@ -612,7 +609,6 @@ body {
             margin-left: auto;
             margin-right: auto;
             display: flex;
-            min-height: 750px;
 
             .slider-list {
                 display: flex !important;
@@ -755,6 +751,7 @@ body {
 
                     img {
                         max-height: 20vh;
+                        max-width: 60vw;
                         margin-top: 10px;
                         display: block;
                     }
@@ -858,7 +855,6 @@ body {
     .copy{
         margin-top: 5vh;
         animation: fade-in 1s ease-in 0s;
-        min-height: 50vh;
     }
 
     .jso {
@@ -874,4 +870,32 @@ body {
     }
 
 
+}
+
+.contact {
+    background-color: #E84545;
+
+    .header {
+        color: #ba1717;
+    }
+
+    .copy {
+
+        margin-top: 5vh;
+
+        .para {
+            color: #fff;
+        }
+
+        .links {
+
+            text-align: center;
+
+            a {
+                color: #fff;
+                font-size: 24pt;
+            }
+        }
+
+    }
 }

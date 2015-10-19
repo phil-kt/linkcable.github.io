@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var jso, jsoLogo, sbgd, sbgdLogo, sbcs, sbcsLogo, recycle, recycleLogo;
-var last, lastCopy;
+var last, lastCopy, copy;
 
 var Extracurriculars = React.createClass({
 
@@ -28,9 +28,16 @@ var Extracurriculars = React.createClass({
 
         last = jsoLogo;
         lastCopy = jso;
+
+        copy = $('.extracurriculars');
+
     },
 
     onClubClick: function(e) {
+
+        var oldHeight = copy.height();
+
+
         if (typeof this.props.onClick !== 'undefined') {
             this.props.onClick(e);
         }
@@ -50,6 +57,13 @@ var Extracurriculars = React.createClass({
         if(e.target.className.includes("recycle") === true){
             this.hideEverything(last, lastCopy, recycleLogo, recycle, "recycle");
         }
+
+        var newHeight = copy.height();
+        copy.height(oldHeight);
+        copy.animate({height: newHeight}, 'fast', function() {
+            copy.height('auto');
+        });
+
 
     },
 
@@ -72,7 +86,7 @@ var Extracurriculars = React.createClass({
         return (
             <div className="page extracurriculars">
                 <div className="header">
-                    Extracurriculars
+                    Clubs
                 </div>
 
                 <div className="logos">

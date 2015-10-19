@@ -13,7 +13,7 @@ var Recycle = require('./recycle.jsx');
 var Cable = require('./cable.jsx');
 
 var grid, content;
-var last, lastCopy;
+var last, lastCopy, copy;
 var roam, stokr, sbu, hungerless, recycle, simpaired, rendezvous, sbgd, cable;
 var roamLogo, stokrLogo, sbuLogo, hungerlessLogo, sbgdLogo, recycleLogo, simpairedLogo, rendezvousLogo, cableLogo;
 
@@ -51,11 +51,16 @@ var Portfolio = React.createClass({
 
         cable = ReactDOM.findDOMNode(this.refs.cable);
         cableLogo = ReactDOM.findDOMNode(this.refs.cableLogo);
+
+        copy = $('.portfolio');
+
     },
 
     onLogoClick: function(e) {
 
         this.setState({portfolioVisible: true});
+
+        var oldHeight = copy.height();
 
         if(e.target.className.includes("roam")){
             this.hideEverything(last, lastCopy, roamLogo, roam, "roam");
@@ -93,6 +98,12 @@ var Portfolio = React.createClass({
         if(e.target.className.includes("cable")){
             this.hideEverything(last, lastCopy, cableLogo, cable, "cable");
         }
+
+        var newHeight = copy.height();
+        copy.height(oldHeight);
+        copy.animate({height: newHeight}, 'fast', function() {
+            copy.height('auto');
+        });
 
     },
 

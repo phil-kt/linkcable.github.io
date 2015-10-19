@@ -7,17 +7,19 @@ import About from './ui/about.jsx';
 import Education from './ui/education.jsx';
 import Experience from './ui/experience.jsx';
 import Portfolio from './ui/portfolio.jsx';
+import Extracurriculars from './ui/extracurriculars.jsx';
 
 var App = React.createClass({
 
   render: function() {
     return (
-      <div>
+      <div className="app">
           <Landing />
           <About />
           <Education />
           <Experience />
           <Portfolio />
+          <Extracurriculars />
       </div>
     );
   }

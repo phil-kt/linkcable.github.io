@@ -14,7 +14,7 @@ const Decorators = [
                 return {
                     border: 0,
                     background: 'none',
-                    color: 'white',
+                    color: 'black',
                     margin: 10,
                     outline: 0,
                     opacity: disabled ? 0.3 : 1,
@@ -37,7 +37,7 @@ const Decorators = [
                 return {
                     border: 0,
                     background: 'none',
-                    color: 'white',
+                    color: 'black',
                     marginRight: 10,
                     outline: 0,
                     opacity: disabled ? 0.3 : 1,

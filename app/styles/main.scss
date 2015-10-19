@@ -321,7 +321,8 @@ body {
 }
 
 .about {
-    background-image: url(../images/bg/birch.jpg);
+    //background-image: url(../images/bg/birch.jpg);
+    background-color: #7793e1;
 
     .header {
         color: #264AAD;
@@ -330,6 +331,9 @@ body {
     .copy {
         margin-top: 5vh;
 
+        para {
+            color: #e3e9f9;
+        }
 
         a {
             color: #ea3d32;
@@ -338,10 +342,11 @@ body {
 }
 
 .education {
-    background-image: url(../images/bg/sbu_contrast.png);
+    //background-image: url(../images/bg/sbu_contrast.png);
+    background-color: #9ac9a0;
 
     .header {
-        color: #72B47A;
+        color: #519859;
     }
 
     .logos {
@@ -412,7 +417,8 @@ body {
 
 .experience {
 
-    background-image: url(../images/bg/ice_blue.jpg);
+    //background-image: url(../images/bg/ice_blue.jpg);
+    background-color: #858585;
 
     .logos {
 
@@ -443,6 +449,7 @@ body {
     .copy {
         margin-top: 5vh;
         animation: fade-in 1s ease-in 0s;
+        min-height: 60vh;
     }
 
     .sbugd {
@@ -468,10 +475,11 @@ body {
 }
 
 .portfolio {
-    background-image: url(../images/bg/sandstone.jpg);
-
+    //background-image: url(../images/bg/marble.jpg);
+    //background-size: 100%;
+    background-color: #FFC107;
     .header {
-        color: #fff;
+        color: #a36600;
     }
 
     .grid {
@@ -533,12 +541,14 @@ body {
         margin-right: auto;
         min-height: 70vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         .logos {
-            width: 7vw;
-            flex-direction: column;
-            border-right: solid white 3px;
+            width: 80vw;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            flex-direction: row;
+            border-bottom: solid #FF5252 3px;
             display: flex;
             height: initial;
             margin-top: 0;
@@ -598,9 +608,11 @@ body {
         }
 
         .about-project {
-            width: 70vw;
-            margin-left: 3vw;
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
             display: flex;
+            min-height: 750px;
 
             .slider-list {
                 display: flex !important;
@@ -616,8 +628,8 @@ body {
 
 
             .carousel-image {
-                max-height: 70vh;
-                max-width: 60vw;
+                max-height: 80vh;
+                max-width: 70vw;
             }
 
             .slider-decorator-2{
@@ -637,7 +649,12 @@ body {
                 height: 20vh;
                 background: no-repeat;
                 background-size: contain;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
+                background-position-x: 50%;
+            }
+
+            .para {
+                color: #212121;
             }
 
             .about-roam {
@@ -673,7 +690,7 @@ body {
             .about-rendezvous {
 
                 .rendezvous-wordmark {
-                    background-image: url(../images/portfolio/rendezvous/rendezvous_wordmark.png);
+                    background-image: url(../images/portfolio/rendezvous/rendezvous-wordmark.png);
                 }
 
                 a {
@@ -803,7 +820,11 @@ body {
 
 .extracurriculars {
 
-    background-image: url(../images/bg/manila.jpg);
+    background-color: #00BCD4;
+
+    .header {
+        color: #00606a;
+    }
 
     .logos {
 
@@ -820,15 +841,37 @@ body {
 
         .sbcs::after {
             background-image: url(../images/extracurriculars/sbcs.png);
+
         }
 
         .sbgd::after {
-            background-image: url(../images/portfolio/sbgd.png);
+            background-image: url(../images/portfolio/sbgd_logo.png);
         }
-        
+
         .recycle::after {
             background-image: url(../images/portfolio/recycle/recycle.png);
         }
 
     }
+
+
+    .copy{
+        margin-top: 5vh;
+        animation: fade-in 1s ease-in 0s;
+        min-height: 50vh;
+    }
+
+    .jso {
+        a {
+            color: #c80025;
+        }
+    }
+
+    .sbcs {
+        a {
+            color: #55a1d8;
+        }
+    }
+
+
 }

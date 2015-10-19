@@ -5,11 +5,17 @@ var Decorators = require('./decorators.jsx');
 var Roam = require('./roam-carousel.jsx');
 var Stokr = require('./stokr-carousel.jsx');
 var Rendezvous = require('./rendezvous-carousel.jsx');
+var Hungerless = require('./hungerless-carousel.jsx');
+var Simpaired = require('./simpaired-carousel.jsx');
+var SBUDesign = require('./sbu-design-carousel.jsx');
+var SBGD = require('./sbgd.jsx');
+var Recycle = require('./recycle.jsx');
+var Cable = require('./cable.jsx');
 
 var grid, content;
 var last, lastCopy;
 var roam, stokr, sbu, hungerless, recycle, simpaired, rendezvous, sbgd, cable;
-var roamLogo, stokrLogo, sbuLogo, hungerlessLogo, recycleLogo, simpairedLogo, rendezvousLogo, cableLogo;
+var roamLogo, stokrLogo, sbuLogo, hungerlessLogo, sbgdLogo, recycleLogo, simpairedLogo, rendezvousLogo, cableLogo;
 
 var Portfolio = React.createClass({
 
@@ -27,6 +33,24 @@ var Portfolio = React.createClass({
 
         rendezvous = ReactDOM.findDOMNode(this.refs.rendezvous);
         rendezvousLogo = ReactDOM.findDOMNode(this.refs.rendezvousLogo);
+
+        hungerless = ReactDOM.findDOMNode(this.refs.hungerless);
+        hungerlessLogo = ReactDOM.findDOMNode(this.refs.hungerlessLogo);
+
+        simpaired  = ReactDOM.findDOMNode(this.refs.simpaired);
+        simpairedLogo = ReactDOM.findDOMNode(this.refs.simpairedLogo);
+
+        sbu = ReactDOM.findDOMNode(this.refs.sbuDesign);
+        sbuLogo = ReactDOM.findDOMNode(this.refs.sbuDesignLogo);
+
+        sbgd = ReactDOM.findDOMNode(this.refs.sbgd);
+        sbgdLogo = ReactDOM.findDOMNode(this.refs.sbgdLogo);
+
+        recycle = ReactDOM.findDOMNode(this.refs.recycle);
+        recycleLogo = ReactDOM.findDOMNode(this.refs.recycleLogo);
+
+        cable = ReactDOM.findDOMNode(this.refs.cable);
+        cableLogo = ReactDOM.findDOMNode(this.refs.cableLogo);
     },
 
     onLogoClick: function(e) {
@@ -45,6 +69,30 @@ var Portfolio = React.createClass({
             this.hideEverything(last, lastCopy, rendezvousLogo, rendezvous, "rendezvous");
         }
 
+        if(e.target.className.includes("hungerless")){
+            this.hideEverything(last, lastCopy, hungerlessLogo, hungerless, "hungerless");
+        }
+
+
+        if(e.target.className.includes("simpaired")){
+            this.hideEverything(last, lastCopy, simpairedLogo, simpaired, "simpaired");
+        }
+
+        if(e.target.className.includes("sbu-design")){
+            this.hideEverything(last, lastCopy, sbuLogo, sbu, "sbu-design");
+        }
+
+        if(e.target.className.includes("sbgd")){
+            this.hideEverything(last, lastCopy, sbgdLogo, sbgd, "sbgd");
+        }
+
+        if(e.target.className.includes("recycle")){
+            this.hideEverything(last, lastCopy, recycleLogo, recycle, "recycle");
+        }
+
+        if(e.target.className.includes("cable")){
+            this.hideEverything(last, lastCopy, cableLogo, cable, "cable");
+        }
 
     },
 
@@ -71,11 +119,12 @@ var Portfolio = React.createClass({
               <div className="header">
                 Portfolio
               </div>
+
               <div className={this.state.portfolioVisible ? 'grid hidden' : 'grid'} ref="grid">
                   <div className="logos">
                       <div className="logo logo-passive roam" onClick={this.onLogoClick}>
                       </div>
-                      <div className="logo logo-passive sbuport" onClick={this.onLogoClick}>
+                      <div className="logo logo-passive sbu-design" onClick={this.onLogoClick}>
                       </div>
                       <div className="logo logo-passive stokr" onClick={this.onLogoClick}>
                       </div>
@@ -84,9 +133,9 @@ var Portfolio = React.createClass({
 
                       <div className="logo logo-passive rendezvous" onClick={this.onLogoClick}>
                       </div>
-                      <div className="logo logo-passive hunger" onClick={this.onLogoClick}>
+                      <div className="logo logo-passive hungerless" onClick={this.onLogoClick}>
                       </div>
-                      <div className="logo logo-passive sim" onClick={this.onLogoClick}>
+                      <div className="logo logo-passive simpaired" onClick={this.onLogoClick}>
                       </div>
                   </div>
 
@@ -100,7 +149,6 @@ var Portfolio = React.createClass({
                   </div>
               </div>
 
-
               <div className={this.state.portfolioVisible ? 'content fade-in' : 'content hidden'} ref="content">
                   <div className="logos">
                       <div className="logo logo-passive roam" onClick={this.onLogoClick} ref="roamLogo">
@@ -109,11 +157,11 @@ var Portfolio = React.createClass({
                       </div>
                       <div className="logo logo-passive rendezvous" onClick={this.onLogoClick} ref="rendezvousLogo">
                       </div>
-                      <div className="logo logo-passive hunger" onClick={this.onLogoClick} ref="hungerLogo">
+                      <div className="logo logo-passive hungerless" onClick={this.onLogoClick} ref="hungerlessLogo">
                       </div>
-                      <div className="logo logo-passive sim" onClick={this.onLogoClick} ref="simLogo">
+                      <div className="logo logo-passive simpaired" onClick={this.onLogoClick} ref="simpairedLogo">
                       </div>
-                      <div className="logo logo-passive sbuport" onClick={this.onLogoClick} ref="sbuportLogo">
+                      <div className="logo logo-passive sbu-design" onClick={this.onLogoClick} ref="sbuDesignLogo">
                       </div>
                       <div className="logo logo-passive sbgd" onClick={this.onLogoClick} ref="sbgdLogo">
                       </div>
@@ -123,9 +171,15 @@ var Portfolio = React.createClass({
                       </div>
                   </div>
                   <div className="about-project">
-                      <Roam ref="about-roam" ref="roam" />
-                      <Stokr ref="about-stokr" ref="stokr" />
-                      <Rendezvous ref="about-rendezvous" ref="rendezvous" />
+                      <Roam ref="roam" />
+                      <Stokr ref="stokr" />
+                      <Rendezvous ref="rendezvous" />
+                      <Hungerless  ref="hungerless" />
+                      <Simpaired ref="simpaired" />
+                      <SBUDesign ref="sbuDesign" />
+                      <SBGD ref="sbgd" />
+                      <Recycle ref="recycle" />
+                      <Cable ref="cable" />
                   </div>
               </div>
           </div>

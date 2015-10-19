@@ -28,7 +28,7 @@ var About = React.createClass({
                       facts:
                       <ul>
                           <li><i className="fa fa-globe fa-fw"></i> I'm half-Swede, half-Japanese.</li>
-                          <li><i className="fa fa-code fa-fw"></i> <s>I've never won a Hackathon.</s> <a href="http://devpost.com/software/roam-yno5mc">I won HackNY!</a> </li>
+                          <li><i className="fa fa-code fa-fw"></i> <s>I've never won a Hackathon.</s> <a href="https://www.facebook.com/MajorLeagueHacking/photos/a.749400055110675.1073741828.591858720864810/998464196870925/?type=3">I won HackNY!</a> </li>
                           <li><i className="fa fa-yen fa-fw"></i> I'm a big fan of vaporwave. </li>
                       </ul>
                   </div>

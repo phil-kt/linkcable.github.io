@@ -34,10 +34,13 @@ var Roam = React.createClass({
                     </p>
                 </div>
                 <div>
-                    <h1>hi</h1>
+                    <img src="../../images/portfolio/roam/roam-1.png" className="carousel-image"></img>
                 </div>
                 <div>
-                    <h2> hello </h2>
+                    <img src="../../images/portfolio/roam/roam-2.png" className="carousel-image"></img>
+                </div>
+                <div>
+                    <img src="../../images/portfolio/roam/roam-3.png" className="carousel-image"></img>
                 </div>
             </Carousel>
         )

@@ -489,27 +489,27 @@ body {
 
 
             .roam::after {
-                background-image: url(../images/portfolio/roam_logo.png);
+                background-image: url(../images/portfolio/roam/roam_logo.png);
             }
 
-            .sbuport::after {
+            .sbu-design::after {
                 background-image: url(../images/portfolio/sbu.svg);
             }
 
             .stokr::after {
-                background-image: url(../images/portfolio/stokr_logo.svg);
+                background-image: url(../images/portfolio/stokr/stokr_logo.svg);
             }
 
             .rendezvous::after {
-                background-image: url(../images/portfolio/rendezvous.png);
+                background-image: url(../images/portfolio/rendezvous/rendezvous.png);
             }
 
-            .hunger::after{
+            .hungerless::after{
                 background-image: url(../images/portfolio/hungerless.png);
             }
 
-            .sim::after {
-                background-image: url(../images/portfolio/simpaired_logo.png);
+            .simpaired::after {
+                background-image: url(../images/portfolio/simpaired/simpaired_logo.png);
             }
 
             .sbgd::after {
@@ -517,11 +517,11 @@ body {
             }
 
             .recycle::after {
-                background-image: url(../images/portfolio/recycle.png);
+                background-image: url(../images/portfolio/recycle/recycle.png);
             }
 
             .cable::after{
-                background-image: url(../images/portfolio/logo.png);
+                background-image: url(../images/portfolio/cable.png);
             }
         }
     }
@@ -561,27 +561,27 @@ body {
             }
 
             .roam::after {
-                background-image: url(../images/portfolio/roam_logo.png);
+                background-image: url(../images/portfolio/roam/roam_logo.png);
             }
 
-            .sbuport::after{
+            .sbu-design::after{
                 background-image: url(../images/portfolio/sbu.svg);
             }
 
             .stokr::after{
-                background-image: url(../images/portfolio/stokr_logo.svg);
+                background-image: url(../images/portfolio/stokr/stokr_logo.svg);
             }
 
-            .hunger::after{
+            .hungerless::after{
                 background-image: url(../images/portfolio/hungerless.png);
             }
 
             .rendezvous::after {
-                background-image: url(../images/portfolio/rendezvous.png);
+                background-image: url(../images/portfolio/rendezvous/rendezvous.png);
             }
 
-            .sim::after {
-                background-image: url(../images/portfolio/simpaired_logo.png);
+            .simpaired::after {
+                background-image: url(../images/portfolio/simpaired/simpaired_logo.png);
             }
 
             .sbgd::after {
@@ -589,19 +589,36 @@ body {
             }
 
             .recycle::after {
-                background-image: url(../images/portfolio/recycle.png);
+                background-image: url(../images/portfolio/recycle/recycle.png);
             }
 
             .cable::after{
-                background-image: url(../images/portfolio/logo.png);
+                background-image: url(../images/portfolio/cable.png);
             }
         }
 
         .about-project {
             width: 70vw;
-            display: inline-block;
             margin-left: 3vw;
             display: flex;
+
+            .slider-list {
+                display: flex !important;
+                justify-content: center;
+                align-items: center;
+
+                .slider-slide {
+                    display: flex !important;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+
+            .carousel-image {
+                max-height: 70vh;
+                max-width: 60vw;
+            }
 
             .slider-decorator-2{
                 bottom: unset !important;
@@ -625,7 +642,7 @@ body {
 
             .about-roam {
                 .roam-wordmark {
-                    background-image: url(../images/portfolio/roam.png);
+                    background-image: url(../images/portfolio/roam/roam.png);
                 }
 
                 a {
@@ -639,7 +656,7 @@ body {
 
             .about-stokr {
                 .stokr-wordmark {
-                    background-image: url(../images/portfolio/stokr.png);
+                    background-image: url(../images/portfolio//stokr/stokr.png);
                 }
 
                 a {
@@ -649,39 +666,169 @@ body {
                 .devpost {
                     background-color: #7c7c7c;
                 }
+
+
             }
 
             .about-rendezvous {
-                .slider-list {
-                    display: flex !important;
-                    justify-content: center;
-                    align-items: center;
 
-                    .slider-slide {
-                        display: flex !important;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
                 .rendezvous-wordmark {
                     background-image: url(../images/portfolio/rendezvous/rendezvous_wordmark.png);
                 }
 
                 a {
-                    color: #72bae2;
+                    color: #c6e4f4;
                 }
 
                 .devpost {
-                    background-color: #dceef8;
+                    background-color: #c6e4f4;
                 }
 
-                .rendezvous-1 {
-                    margin: auto;
+
+            }
+
+            .about-hungerless {
+
+                .hungerless-wordmark {
+                    background-image: url(../images/portfolio/hungerless/hungerless-wordmark.png);
+                }
+
+                a {
+                    color: #a68753;
+                }
+
+                .devpost {
+                    background-color: #a68753;
+                }
+
+            }
+
+            .about-simpaired {
+
+                .simpaired-wordmark {
+                    background-image: url(../images/portfolio/simpaired/simpaired-wordmark.png);
+                }
+
+                a {
+                    color: #D55555;
+                }
+
+                .devpost {
+                    background-color: #D55555;
+                }
+
+            }
+
+            .about-sbu-design {
+
+                .sbu-design-wordmark {
+                    background-image: url(../images/portfolio/sbu-design/sbu-wordmark.png);
+                }
+
+                a {
+                    color: #D55555;
+                }
+
+                .devpost {
+                    background-color: #D55555;
+                }
+
+                .carousel-image {
                     max-height: 70vh;
+
+                    img {
+                        max-height: 20vh;
+                        margin-top: 10px;
+                        display: block;
+                    }
+                }
+            }
+
+            .about-sbgd {
+
+                margin: 0px 40px;
+
+                .sbgd-wordmark {
+                    background-image: url(../images/portfolio/sbgd/sbgd-wordmark.png);
+                }
+
+                a {
+                    color: #D55555;
+                }
+
+                .devpost {
+                    background-color: #D55555;
+                }
+            }
+
+            .about-recycle {
+
+                margin: 0px 40px;
+
+                .recycle-wordmark {
+                    background-image: url(../images/portfolio/recycle/recycle-wordmark.png);
+                }
+
+                a {
+                    color: #007700;
+                }
+
+                .devpost {
+                    background-color: #007700;
+                }
+            }
+
+
+            .about-cable {
+
+                margin: 0px 40px;
+
+                .cable-wordmark {
+                    background-image: url(../images/portfolio/cable.png);
+                }
+
+                a {
+                    color: #007700;
+                }
+
+                .devpost {
+                    background-color: #007700;
                 }
             }
 
         }
     }
 
+}
+
+.extracurriculars {
+
+    background-image: url(../images/bg/manila.jpg);
+
+    .logos {
+
+        margin-top: 3vh;
+        height: 15vh;
+
+        .logo {
+            width: 15vw;
+        }
+
+        .jso::after {
+            background-image: url(../images/extracurriculars/jso.png);
+        }
+
+        .sbcs::after {
+            background-image: url(../images/extracurriculars/sbcs.png);
+        }
+
+        .sbgd::after {
+            background-image: url(../images/portfolio/sbgd.png);
+        }
+        
+        .recycle::after {
+            background-image: url(../images/portfolio/recycle/recycle.png);
+        }
+
+    }
 }

@@ -27,13 +27,13 @@ var Rendezvous = React.createClass({
                     </p>
                 </div>
                 <div>
-                    <img src="../../images/portfolio/rendezvous/rendezvous_1.png" className="rendezvous-1"></img>
+                    <img src="../../images/portfolio/rendezvous/rendezvous-1.png" className="carousel-image"></img>
                 </div>
                 <div>
-                    <div className="rendezvous-2"></div>
+                    <img src="../../images/portfolio/rendezvous/rendezvous-2.png" className="carousel-image"></img>
                 </div>
                 <div>
-                    <div className="rendezvous-3"></div>
+                    <img src="../../images/portfolio/rendezvous/rendezvous-3.png" className="carousel-image"></img>
                 </div>
             </Carousel>
         )

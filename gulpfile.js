@@ -38,8 +38,6 @@ gulp.task('sass', function() {
         .pipe($.size());
 });
 
-
-
 var bundler = watchify(browserify({
     entries: [sourceFile],
     debug: true,
@@ -138,7 +136,7 @@ gulp.task('moveLibraries',['clean'], function(){
 
 // Bower helper
 gulp.task('bower', function() {
-    gulp.src('app/bower_components/**/*.js', {
+    gulp.src(['app/bower_components/**/*.js', 'app/bower_components/font-awesome/fonts/**', 'app/bower_components/font-awesome/scss/**'], {
             base: 'app/bower_components'
         })
         .pipe(gulp.dest('dist/bower_components/'));

@@ -12,7 +12,7 @@ var Hungerless = React.createClass({
                 <div className="hungerless-profile copy ">
                     <p className="hungerless-wordmark wordmark"></p>
                     <p className="para">
-                        Hungerless is a webapp that was created a HudsonHack 2015. The teme of HudsonHack was to create an application that could benefit NYC and its populace. Our team decided to create an app to help feed the homeless, where people could report their leftovers from a meal and arrange to donate it to a homeless person looking for food who is texted where to meet and what meal to expect.
+                        Hungerless is a webapp that was created a HudsonHack 2015. The theme of HudsonHack was to create an application that could benefit NYC and its populace. Our team decided to create an app to help feed the homeless, where people could report their leftovers from a meal and arrange to donate it to a homeless person looking for food who is texted where to meet and what meal to expect.
                     </p>
 
                     <p className="para">
@@ -27,13 +27,13 @@ var Hungerless = React.createClass({
                     </p>
                 </div>
                 <div>
-                    <img src="../../images/portfolio/hungerless/hungerless-1.png" className="carousel-image"></img>
+                    <img src='./images/portfolio/hungerless/hungerless-1.png' className="carousel-image"></img>
                 </div>
                 <div>
-                    <img src="../../images/portfolio/hungerless/hungerless-2.png" className="carousel-image"></img>
+                    <img src="./images/portfolio/hungerless/hungerless-2.png" className="carousel-image"></img>
                 </div>
                 <div>
-                    <img src="../../images/portfolio/hungerless/hungerless-3.png" className="carousel-image"></img>
+                    <img src="./images/portfolio/hungerless/hungerless-3.png" className="carousel-image"></img>
                 </div>
             </Carousel>
         )

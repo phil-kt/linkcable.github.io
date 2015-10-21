@@ -20,9 +20,9 @@ var SBUDesign = React.createClass({
                 </div>
                 <div>
                     <div className="carousel-image">
-                        <img src="../../images/portfolio/sbu-design/yahoo-banner.png"></img>
-                        <img src="../../images/portfolio/sbu-design/nsf-banner.png"></img>
-                        <img src="../../images/portfolio/sbu-design/censorship-banner.png"></img>
+                        <img src="./images/portfolio/sbu-design/yahoo-banner.png"></img>
+                        <img src="./images/portfolio/sbu-design/nsf-banner.png"></img>
+                        <img src="./images/portfolio/sbu-design/censorship-banner.png"></img>
                     </div>
                 </div>
             </Carousel>

@@ -24,13 +24,13 @@ var Simpaired = React.createClass({
                     </p>
                 </div>
                 <div>
-                    <img src="../../images/portfolio/simpaired/simpaired-1.png" className="carousel-image"></img>
+                    <img src="./images/portfolio/simpaired/simpaired-1.png" className="carousel-image"></img>
                 </div>
                 <div>
-                    <img src="../../images/portfolio/simpaired/simpaired-2.png" className="carousel-image"></img>
+                    <img src="./images/portfolio/simpaired/simpaired-2.png" className="carousel-image"></img>
                 </div>
                 <div>
-                    <img src="../../images/portfolio/simpaired/simpaired-3.png" className="carousel-image"></img>
+                    <img src="./images/portfolio/simpaired/simpaired-3.png" className="carousel-image"></img>
                 </div>
             </Carousel>
         )

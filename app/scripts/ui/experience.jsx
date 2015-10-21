@@ -82,9 +82,9 @@ var Experience = React.createClass({
     render: function() {
         return (
             <div className="page experience">
-                <div className="header">
+                <h1 className="header">
                     Experience
-                </div>
+                </h1>
 
                 <div className="logos">
 

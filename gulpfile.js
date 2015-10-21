@@ -2,8 +2,7 @@
 
 var gulp = require('gulp');
 var del = require('del');
-
-
+var assetpaths = require('gulp-assetpaths');
 
 // Load plugins
 var $ = require('gulp-load-plugins')();
@@ -88,7 +87,7 @@ gulp.task('html', function() {
 
 // Images
 gulp.task('images', function() {
-    return gulp.src('app/images/**/*')
+    return gulp.src('app/images/**/*', {base: './app/images/'})
         .pipe($.cache($.imagemin({
             optimizationLevel: 3,
             progressive: true,
@@ -162,13 +161,13 @@ gulp.task('extras', function() {
 });
 
 gulp.task('files', function() {
-    return gulp.src(['app/files/*'])
+    return gulp.src(['app/files/*'], {base: './app/files/' })
         .pipe(gulp.dest('dist/files/'))
         .pipe($.size());
 });
 
 // Watch
-gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
+gulp.task('watch', ['html', 'fonts', 'bundle', 'files'], function() {
 
     browserSync({
         notify: false,
@@ -192,6 +191,10 @@ gulp.task('watch', ['html', 'fonts', 'bundle'], function() {
 
     // Watch image files
     gulp.watch('app/images/**/*', reload);
+
+    //Watch files
+    gulp.watch('app/files/**/*', reload);
+
 });
 
 // Build

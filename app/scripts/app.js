@@ -22,6 +22,14 @@ var App = React.createClass({
           <Portfolio />
           <Extracurriculars />
           <Contact />
+          <div className="footer">
+              <p>
+                  Website made using <a href="https://github.com/randylien/generator-react-gulp-browserify">react-gulp-browserify</a> with help from <a href="https://github.com/kenwheeler/nuka-carousel">nuka carousel</a>.
+              </p>
+              <p>
+                  <a href="https://github.com/LinkCable/linkcable.github.io/tree/react-rewrite">View this site on github.</a>
+              </p>
+          </div>
       </div>
     );
   }

@@ -85,9 +85,9 @@ var Extracurriculars = React.createClass({
 
         return (
             <div className="page extracurriculars">
-                <div className="header">
+                <h1 className="header">
                     Clubs
-                </div>
+                </h1>
 
                 <div className="logos">
                     <div className="logo logo-active jso" onClick={this.onClubClick} ref="jsoLogo">
@@ -111,7 +111,7 @@ var Extracurriculars = React.createClass({
                         As president of JSO, I organize weekly general body meetings, each with their own unique aspect of Japanese culture, such as origami, calligraphy, or kigo. I also organize large scale events with 100's of people coming out, such as Moon Viewing Night or our Maid Cafe. I also manage extensions of JSO, such as J-Jamu, our club band, and Nippon Dance Corp., our dance team.
                     </p>
                     <p className="para">
-                        All in all, JSO is one of the things I'm most proud of in college and it's given me friends, family, and a place to always call home. &hearts;
+                        All in all, JSO is one of the things I'm most proud of in college and it's given me friends, family, and a place to always call home. <span className="heart">&hearts;</span>
                     </p>
                 </div>
                 <div className="hidden-fade" ref="sbcs">

@@ -61,19 +61,13 @@ var Education = React.createClass({
 
         return (
             <div className="page education">
-                <div className="header">
+                <h1 className="header">
                     Education
-                </div>
+                </h1>
                 <div className="logos">
                     <div className="logo logo-passive efrei" onClick={this.onSchoolClick} ref="efreiLogo">
                     </div>
-                    <div className = "plane-container">
-                        <i className="fa fa-plane plane fa-rotate-225 left-plane" ref="leftPlane"></i>
-                    </div>
                     <div className="logo logo-active sbu" onClick={this.onSchoolClick} ref="sbuLogo">
-                    </div>
-                    <div className = "plane-container">
-                        <i className="fa fa-plane plane fa-rotate-45 right-plane" ref="rightPlane"></i>
                     </div>
                     <div className="logo logo-passive uos" onClick={this.onSchoolClick} ref="uosLogo">
                     </div>

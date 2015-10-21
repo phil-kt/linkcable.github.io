@@ -5,9 +5,9 @@ var About = React.createClass({
     render: function() {
         return (
           <div className="page about">
-              <div className="header">
+              <h1 className="header">
                   About Me
-              </div>
+              </h1>
               <div className="copy">
                   <p className="para">
                       Hey, as you might have already guessed, my name's Phil. Philippe Kimura-Thollander to be exact. I'm an aspiring designer/programmer/nerd currently

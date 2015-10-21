@@ -127,9 +127,9 @@ var Portfolio = React.createClass({
 
         return (
           <div className="page portfolio">
-              <div className="header">
+              <h1 className="header">
                 Portfolio
-              </div>
+              </h1>
 
               <div className={this.state.portfolioVisible ? 'grid hidden' : 'grid'} ref="grid">
                   <div className="logos">

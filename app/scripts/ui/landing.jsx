@@ -22,7 +22,7 @@ var Landing = React.createClass({
 
                     <div className="footer">
                         scroll down for more <i className="fa fa-hand-o-down"></i> <br />
-                        (want the abridged version? <a href="./files/resume.pdf"><i className="fa fa-file-text-o"></i></a>)
+                        (want the abridged version? <a href="./files/philippe_kimura-thollander_resume.pdf"><i className="fa fa-file-text-o"></i></a>)
                     </div>
 
                 </div>

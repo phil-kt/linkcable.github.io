@@ -667,7 +667,7 @@ body {
 
             .about-stokr {
                 .stokr-wordmark {
-                    background-image: url(../images/portfolio//stokr/stokr.png);
+                    background-image: url(../images/portfolio/stokr/stokr.png);
                 }
 
                 a {
@@ -726,6 +726,10 @@ body {
 
                 .devpost {
                     background-color: #D55555;
+                }
+
+                .carousel-image {
+                    max-width: 50vw;
                 }
 
             }
@@ -1005,6 +1009,8 @@ body {
 }
 
 @media (max-width: 450px) {
+
+
     .landing{
         .intro {
             margin-right: 5vw;
@@ -1027,6 +1033,15 @@ body {
                 }
             }
         }
+    }
 
+    .page {
+        .copy {
+            font-size: 14px;
+        }
+    }
+
+    .footer {
+        font-size: 10px;
     }
 }

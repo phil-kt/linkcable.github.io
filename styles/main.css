@@ -10568,7 +10568,7 @@ body {
   background-color: #406a35;
 }
 .portfolio .content .about-project .about-stokr .stokr-wordmark {
-  background-image: url(../images/portfolio//stokr/stokr.png);
+  background-image: url(../images/portfolio/stokr/stokr.png);
 }
 .portfolio .content .about-project .about-stokr a {
   color: #7c7c7c;
@@ -10602,6 +10602,9 @@ body {
 }
 .portfolio .content .about-project .about-simpaired .devpost {
   background-color: #D55555;
+}
+.portfolio .content .about-project .about-simpaired .carousel-image {
+  max-width: 50vw;
 }
 .portfolio .content .about-project .about-sbu-design .sbu-design-wordmark {
   background-image: url(../images/portfolio/sbu-design/sbu-wordmark.png);

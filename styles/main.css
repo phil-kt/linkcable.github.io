@@ -10817,4 +10817,12 @@ body {
   .landing .intro .footer a {
     color: #fff;
   }
+
+  .page .copy {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
 }

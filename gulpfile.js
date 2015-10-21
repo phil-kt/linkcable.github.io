@@ -2,7 +2,6 @@
 
 var gulp = require('gulp');
 var del = require('del');
-var assetpaths = require('gulp-assetpaths');
 
 // Load plugins
 var $ = require('gulp-load-plugins')();

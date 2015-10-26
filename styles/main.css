@@ -10811,6 +10811,9 @@ body {
   .landing .intro .anim-container {
     font-size: 24px;
   }
+  .landing .intro .anim-container .rotating-words span {
+    right: 5vw;
+  }
   .landing .intro .footer {
     color: #fff;
   }
@@ -10820,6 +10823,14 @@ body {
 
   .page .copy {
     font-size: 14px;
+  }
+
+  .portfolio .content .about-project .wordmark {
+    height: 10vh;
+  }
+  .portfolio .content .about-project .devpost {
+    width: 14px;
+    height: 14px;
   }
 
   .footer {

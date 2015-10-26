@@ -1023,6 +1023,12 @@ body {
             }
             .anim-container {
                 font-size: 24px;
+
+                .rotating-words {
+                    span {
+                        right: 5vw;
+                    }
+                }
             }
 
             .footer {
@@ -1040,6 +1046,24 @@ body {
             font-size: 14px;
         }
     }
+
+    .portfolio {
+        .content {
+
+            .about-project {
+
+                .wordmark {
+                    height: 10vh;
+                }
+
+                .devpost {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+    }
+
 
     .footer {
         font-size: 10px;

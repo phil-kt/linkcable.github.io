@@ -9904,8 +9904,8 @@ button.close {
   /* Safari, Android, iOS */
 }
 @font-face {
-  font-family: 'Mikado Regular';
-  src: url("../fonts/mikado_regular/mikado_regular.woff2") format("woff2"), url("../fonts/mikado_regular/mikado_regular.woff") format("woff"), url("../fonts/mikado_regular/mikado_regular.ttf") format("truetype");
+  font-family: 'Hurme Geometric';
+  src: url("../fonts/hurme_geometric/HurmeGeometricSans.woff2") format("woff2"), url("../fonts/hurme_geometric/HurmeGeometricSans.woff") format("woff"), url("../fonts/hurme_geometric/HurmeGeometricSans.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 @-webkit-keyframes anim-words {
@@ -10269,7 +10269,7 @@ body {
   min-height: 50vh;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Mikado Regular';
+  font-family: 'Hurme Geometric';
   text-align: left;
   font-size: 24px;
   color: #fff;
@@ -10282,7 +10282,7 @@ body {
 }
 
 .about {
-  background-color: #7793e1;
+  background-color: #03A9F4;
 }
 .about .header {
   color: #264AAD;
@@ -10294,7 +10294,10 @@ body {
   color: #e3e9f9;
 }
 .about .copy a {
-  color: #ea3d32;
+  color: #1976D2;
+}
+.about .copy a:hover {
+  text-decoration: none;
 }
 
 .education {

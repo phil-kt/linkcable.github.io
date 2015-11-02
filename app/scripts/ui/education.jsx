@@ -94,7 +94,7 @@ var Education = React.createClass({
                         3.5 GPA across all CS courses.
                     </p>
                     <p className="para">
-                        Classes I've taken during my time here include Analysis of Algorithms with Steven Skiena,
+                        Classes I've taken during my time here include Analysis of Algorithms,
                         Human-Computer Interaction, Operating Systems, Computer Architecture, Multimedia (Intro &
                         Advanced). I'm currently taking Networks, Databases, and Software Engineering.
                     </p>

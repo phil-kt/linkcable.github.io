@@ -20,7 +20,7 @@ var Contact = React.createClass({
                         <a href="http://www.github.com/linkcable"><i className="fa fa-github fa-fw"></i></a>
                         <a href="http://www.last.fm/user/LinkCable"><i className="fa fa-lastfm fa-fw"></i></a>
                         <a href="https://dmg04.wordpress.com/"><i className="fa fa-wordpress fa-fw"></i></a>
-                        <a href="#" title="I don't actually have a dribbble. If you have an invite though..."><i className="fa fa-dribbble fa-fw"></i></a>
+                        <a href="https://www.dribbble.com/LinkCable" title="I don't actually have a dribbble. If you have an invite though..."><i className="fa fa-dribbble fa-fw"></i></a>
                     </p>
                     <p className="para last">
                         Thanks for reading!

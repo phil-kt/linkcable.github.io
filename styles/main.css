@@ -9904,8 +9904,8 @@ button.close {
   /* Safari, Android, iOS */
 }
 @font-face {
-  font-family: 'Hurme Geometric';
-  src: url("../fonts/hurme_geometric/HurmeGeometricSans.woff2") format("woff2"), url("../fonts/hurme_geometric/HurmeGeometricSans.woff") format("woff"), url("../fonts/hurme_geometric/HurmeGeometricSans.ttf") format("truetype");
+  font-family: 'Avenir Roman';
+  src: url("../fonts/avenir_roman/avenir_roman.woff2") format("woff2"), url("../fonts/avenir_roman/avenir_roman.woff") format("woff"), url("../fonts/avenir_roman/avenir_roman.ttf") format("truetype");
   /* Safari, Android, iOS */
 }
 @-webkit-keyframes anim-words {
@@ -10269,7 +10269,7 @@ body {
   min-height: 50vh;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Hurme Geometric';
+  font-family: 'Avenir Roman';
   text-align: left;
   font-size: 24px;
   color: #fff;
@@ -10750,7 +10750,7 @@ body {
 
 .footer {
   text-align: center;
-  font-family: 'Mikado Regular';
+  font-family: 'Avenir Roman';
   font-size: 14px;
   background-color: #607D8B;
   padding-top: 10px;

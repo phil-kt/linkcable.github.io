@@ -16,7 +16,7 @@ var Rendezvous = React.createClass({
                     </p>
 
                     <p className="para">
-                        For Rendezvous, I was responsible for wireframing and programming the front-end of the app, as well as creating a logo and the UI. I also had to pick Swift in the 36 hours we had, but thankfully Apple made it pretty easy to code up different screens and animate between them in XCode. Although we didn't end up winning anything, it was a fun project and very rewarding.
+                        For Rendezvous, I was responsible for wireframing and programming the front-end of the app, as well as creating a logo and the UI. I also had to pick Sp uwift in the 36 hours we had, but thankfully Apple made it pretty easy to code up different screens and animate between them in XCode. Although we didn't end up winning anything, it was a fun project and very rewarding.
                     </p>
 
                     <p className="para">

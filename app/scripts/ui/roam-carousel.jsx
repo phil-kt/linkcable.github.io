@@ -20,8 +20,8 @@ var Roam = React.createClass({
                     </p>
 
                     <p className="para">
-                        I was responsible for the UI/UX/front-end aspect of the app. Now, being made in 24 hours and it
-                        being my first attempt at making an Android app as well as implementing my Material Design. I
+                        I was responsible for the UI/UX/front-end aspect of the app. Now, being made in 24 hours and my
+                        first attempt at making an Android app as well as implementing Material Design, I
                         wasn't able to get material animations like I wanted, but thankfully the technical aspect of the
                         app was impressive enough to impress the judges and net us first place.
                     </p>

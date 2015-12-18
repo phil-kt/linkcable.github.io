@@ -134,10 +134,10 @@ var Extracurriculars = React.createClass({
 
                 <div className="hidden-fade" ref="recycle">
                     <p className="para">
-                        I am Secretary of RecycleIT, a club that takes donated computers from the school and teh student body, and works on repairing them, whether it be a fault HDD or it's running too slow and needs more RAM. We take apart computers and try to build something usable for schools and other organizations in the area that need new hardware.
+                        I am Secretary of RecycleIT, a club that takes donated computers from the school and the student body, and works on repairing them, whether it be a fault HDD or it's running too slow and needs more RAM. We take apart computers and try to build something usable for schools and other organizations in the area that need new hardware.
                     </p>
                     <p className="para">
-                        Unfortunately, the school enacted a new e-waste recycling processs this year, which means our club pretty much defunct. This year will mostly be filled with cleaning up our room and getting rid of the remaining PCs we have. :(
+                        Unfortunately, the school enacted a new e-waste recycling process this year, which means our club pretty much defunct. This year will mostly be filled with cleaning up our room and getting rid of the remaining PCs we have. :(
                     </p>
                 </div>
 

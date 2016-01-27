@@ -10159,7 +10159,7 @@ body {
 .landing .intro .footer {
   background: none;
   text-align: right;
-  font-family: 'Core Circus';
+  font-family: "Core Circus";
   color: #000;
   position: absolute;
   bottom: 5vh;
@@ -10168,6 +10168,9 @@ body {
 .landing .intro .footer a {
   text-decoration: none;
   color: #000;
+}
+.landing .intro .footer a:hover {
+  text-decoration: underline;
 }
 
 .page {
@@ -10368,7 +10371,7 @@ body {
   background-image: url(../images/work/stech.png);
 }
 .experience .logos .hbo::after {
-  background-image: url(../images/work/hbo.png);
+  background-image: url(../images/work/HBO.png);
 }
 .experience .logos .hrank::after {
   background-image: url(../images/work/hackerrank.png);
@@ -10388,7 +10391,7 @@ body {
   color: #fdb713;
 }
 .experience .hrank a {
-  color: #27ad5b;
+  color: #4EB977;
 }
 
 .portfolio {
@@ -10539,6 +10542,7 @@ body {
 }
 .portfolio .content .about-project .slider-decorator-2 {
   bottom: unset !important;
+  display: none;
 }
 .portfolio .content .about-project .devpost {
   display: inline-block;
@@ -10580,10 +10584,10 @@ body {
   background-image: url(../images/portfolio/rendezvous/rendezvous-wordmark.png);
 }
 .portfolio .content .about-project .about-rendezvous a {
-  color: #c6e4f4;
+  color: #fff;
 }
 .portfolio .content .about-project .about-rendezvous .devpost {
-  background-color: #c6e4f4;
+  background-color: #fff;
 }
 .portfolio .content .about-project .about-hungerless .hungerless-wordmark {
   background-image: url(../images/portfolio/hungerless/hungerless-wordmark.png);
@@ -10702,7 +10706,7 @@ body {
   color: #c80025;
 }
 .extracurriculars .sbcs a {
-  color: #55a1d8;
+  color: #1B8ADA;
 }
 
 .contact {

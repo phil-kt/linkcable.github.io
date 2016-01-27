@@ -180,7 +180,7 @@ body {
         .footer {
             background: none;
             text-align: right;
-            font-family: 'Core Circus';
+            font-family: 'Core Circus' ;
             color: #000;
             position: absolute;
             bottom: 5vh;
@@ -189,6 +189,10 @@ body {
             a {
                 text-decoration: none;
                 color: #000;
+            }
+
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
@@ -435,7 +439,7 @@ body {
         }
 
         .hbo::after {
-            background-image: url(../images/work/hbo.png);
+            background-image: url(../images/work/HBO.png);
         }
 
         .hrank::after {
@@ -466,7 +470,7 @@ body {
 
     .hrank {
         a {
-            color: #27ad5b;
+            color: #4EB977;
         }
 
     }
@@ -693,11 +697,11 @@ body {
                 }
 
                 a {
-                    color: #c6e4f4;
+                    color: #fff;
                 }
 
                 .devpost {
-                    background-color: #c6e4f4;
+                    background-color: #fff;
                 }
 
 
@@ -881,7 +885,7 @@ body {
 
     .sbcs {
         a {
-            color: #55a1d8;
+            color: #1B8ADA;
         }
     }
 

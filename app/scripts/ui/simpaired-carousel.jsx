@@ -12,7 +12,7 @@ var Simpaired = React.createClass({
                 <div className="simpaired-profile copy ">
                     <p className="simpaired-wordmark wordmark"></p>
                     <p className="para">
-                        Simpaired is a class project designed to simulate the effects of drunk driving in a Unity game. The player is given a first person perspective and drives down a road as their BAC gradually increases and they must avoid other vehicles on the road. As their BAC increases the reaction speed of the player decreases to simulate being drunk.
+                        Simpaired is a class project designed to simulate the effects of drunk driving in a Unity game. The player is given a first person perspective and drives down a road as their BAC gradually increases and they must avoid other vehicles on the road. As the player's BAC increases, the reaction speed of the player decreases to simulate being drunk.
                     </p>
 
                     <p className="para">

@@ -15,7 +15,7 @@ var Cable = React.createClass({
                        This is a personal logo I made, based off of Nintendo's link cable product for the Game Boy and Game Boy Advance.
                     </p>
                     <p className="para">
-                        Link Cable has been my personal online moniker for many years, and it is based on the times I spent playing video games with my friends at school using a link cable and making life long friendships. :)
+                        Link Cable has been my personal online moniker for many years, and it is inspired by the times I spent playing video games with my friends at school using a link cable and making life long friendships. :)
                     </p>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 var React = require('react');
+var $ = require('jquery');
 
 
 var hbo, hboLogo, stech, stechLogo, sbugd, sbugdLogo, hrank, hrankLogo, last, lastCopy, copy;

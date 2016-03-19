@@ -15,7 +15,7 @@ var Recycle = React.createClass({
                         This logo was made for recycleIT, a club which takes old computers from campus and repairs them and makes them suitable to donate for charity.
                     </p>
                     <p className="para">
-                        The logo's basis is the old Microsoft 98 Recycle Bin icon. The logo was made in Blender, and the font in the typeface is Montserrat.
+                        The logo's basis is the old Microsoft 98 Recycle Bin icon. The logo was made in Blender, and the typeface is Montserrat.
                     </p>
                 </div>
             </div>

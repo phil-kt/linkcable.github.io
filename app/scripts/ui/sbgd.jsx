@@ -15,7 +15,7 @@ var SBGD = React.createClass({
                         I am president of the Stony Brook Game Developers on campus and created a logo for the club in the vein of our school's computing society.
                     </p>
                     <p className="para">
-                        The four circles represent the four circles found on any common game controller, with the pixellated meant to evoke the spirit of a video game.
+                        The four circles represent the four circles found on any common game controller, with the pixellated font meant to evoke the spirit of a video game.
                     </p>
                 </div>
             </div>

@@ -99,14 +99,14 @@ var Portfolio = React.createClass({
             this.hideEverything(last, lastCopy, cableLogo, cable, "cable");
         }
 
-        console.log(copy.height());
-        console.log(oldHeight);
+        //console.log(copy.height());
+        //console.log(oldHeight);
         var newHeight = copy.height();
         copy.height(oldHeight);
         copy.animate({height: newHeight}, 'slow', function() {
             copy.height("auto");
         });
-        console.log(copy.height());
+        //console.log(copy.height());
     },
 
     hideEverything: function(previous, previousCopy, clicked, clickedCopy, clickedString) {

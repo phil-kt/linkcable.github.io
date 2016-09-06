@@ -26,6 +26,9 @@ var Landing = React.createClass({
                     </div>
 
                 </div>
+                <div className="heads-up">
+                    Heads up! I'm doing a major redesign of my website so some stuff might be outdated! (this is still using React v0.13 haha) Sorry for the inconvenience, and look forward to the new site. I promise it'll be A E S T H E T I C. <br/> -Posted (9/6/16)
+                </div>
             </div>
         );
     }

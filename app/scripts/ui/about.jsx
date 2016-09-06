@@ -11,7 +11,7 @@ var About = React.createClass({
               <div className="copy">
                   <p className="para">
                       Hey, as you might have already guessed, my name's Phil. Philippe Kimura-Thollander to be exact. I'm an aspiring designer/programmer/nerd currently
-                      in his last year of study at Stony Brook University.
+                      in his first year of study at Georgia Tech's MS-HCI program.
                   </p>
                   <p className="para">
                       If you're on this site, I'm guessing you either:

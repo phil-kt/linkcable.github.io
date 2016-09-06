@@ -1,12 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var sbu, sbuLogo, efrei, efreiLogo, uos, uosLogo, last, lastCopy;;
+var gt, gtLogo, sbu, sbuLogo, efrei, efreiLogo, uos, uosLogo, last, lastCopy;
 
 var Education = React.createClass({
 
     getInitialState: function () {
         return {
-            school: "sbu"
+            school: "gt"
         };
     },
 
@@ -20,13 +20,20 @@ var Education = React.createClass({
         uos = ReactDOM.findDOMNode(this.refs.uos);
         uosLogo = ReactDOM.findDOMNode(this.refs.uosLogo);
 
-        last = ReactDOM.findDOMNode(this.refs.sbuLogo);
-        lastCopy = ReactDOM.findDOMNode(this.refs.sbu);
+        gt = ReactDOM.findDOMNode(this.refs.gt);
+        gtLogo = ReactDOM.findDOMNode(this.refs.gtLogo);
+
+        last = ReactDOM.findDOMNode(this.refs.gtLogo);
+        lastCopy = ReactDOM.findDOMNode(this.refs.gt);
     },
 
     onSchoolClick: function(e) {
         if (typeof this.props.onClick !== 'undefined') {
             this.props.onClick(e);
+        }
+
+        if(e.target.className.includes("gt") === true){
+            this.hideEverything(last, lastCopy, gtLogo, gt, "gt");
         }
 
         if(e.target.className.includes("sbu") === true){
@@ -65,9 +72,11 @@ var Education = React.createClass({
                     Education
                 </h1>
                 <div className="logos">
+                    <div className="logo logo-active gt" onClick={this.onSchoolClick} ref="gtLogo">
+                    </div>
                     <div className="logo logo-passive efrei" onClick={this.onSchoolClick} ref="efreiLogo">
                     </div>
-                    <div className="logo logo-active sbu" onClick={this.onSchoolClick} ref="sbuLogo">
+                    <div className="logo logo-passive sbu" onClick={this.onSchoolClick} ref="sbuLogo">
                     </div>
                     <div className="logo logo-passive uos" onClick={this.onSchoolClick} ref="uosLogo">
                     </div>
@@ -86,19 +95,26 @@ var Education = React.createClass({
                     </p>
                 </div>
 
-                <div className="copy sbu" ref="sbu">
+                <div className="copy gt" ref="gt">
                     <p className="para">
-                        I'm currently attending Stony Brook University on Long Island, majoring in Computer
+                        I am currently in a first year MS-HCI student at Georgia Tech. HCI stands for Human-Computer Interaction, which basically means I'll be learning all about UX research and UI development for the next two years. Every day I'm taking classes to help me become a better designer. :)
+                    </p>
+                </div>
+
+                <div className="hidden-fade" ref="sbu">
+                    <p className="para">
+                        I'm just wrapped up my undergrad at Stony Brook University on Long Island, majoring in Computer
                         Science with minors in History (Asian concentration) and Digital Arts. I'm also a University
                         Scholar with a 3.80/4.00 GPA and in the Honors program for CS, which requires a greater than
                         3.5 GPA across all CS courses.
                     </p>
                     <p className="para">
-                        Classes I've taken during my time here include Analysis of Algorithms,
+                        Classes I took during my time there include Analysis of Algorithms,
                         Human-Computer Interaction, Operating Systems, Computer Architecture, Multimedia (Intro &
-                        Advanced). I'm currently taking Networks, Databases, and Software Engineering.
+                        Advanced), Networks, Databases, and Software Engineering.
                     </p>
                 </div>
+
                 <div className="hidden-fade" ref="uos">
                     <p className="para">
                         I studied at the University of Seoul of Korea in Fall of 2013, my sophomore year. I decided to
@@ -107,7 +123,7 @@ var Education = React.createClass({
                     </p>
                     <p className="para">
                         Whilst I was there I studied Korean language, culture, and nightlife. I visited several UNESCO
-                        sites, made friends with expats, travelled to Taipei and Tokyo, saw SNSD, T-Ara, and 9 Muses live,
+                        sites, made friends with expats, travelled to Taipei and Tokyo, saw SNSD, T-Ara, and 9Muses live,
                         and made life-lasting friends
                         across the globe.
                     </p>

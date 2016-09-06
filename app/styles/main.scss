@@ -197,7 +197,16 @@ body {
         }
     }
 
-
+    .heads-up {
+        width: 100vw;
+        font-family: 'Avenir Roman';
+        position: absolute;
+        background-color: red;
+        color: white;
+        text-align: center;
+        top: 0;
+        font-size: 20px;
+    }
 
 }
 
@@ -386,13 +395,19 @@ body {
         }
 
         .sbu {
-            margin: 0;
-            width: 30vw;
-            display: inline-block;
+            height: 20vh;
         }
 
         .sbu::after {
             background-image: url(../images/schools/sbu.png);
+        }
+
+        .gt {
+            height: 20vh;
+        }
+
+        .gt::after {
+            background-image: url(../images/schools/gt.png);
         }
 
         .efrei {
@@ -980,6 +995,10 @@ body {
             .anim-container {
                 font-size: 48px;
             }
+        }
+
+        .heads-up {
+            font-size: 14px;
         }
     }
 }
